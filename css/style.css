@@ -1021,6 +1021,10 @@ button {
     gap: 20px;
     text-align: center;
   }
+
+  .floating-icons {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
