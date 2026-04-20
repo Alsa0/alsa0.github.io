@@ -1,0 +1,196 @@
+// ============================================
+// MAIN.JS — Logique du portfolio
+// ============================================
+
+document.addEventListener("DOMContentLoaded", () => {
+  initNavbar();
+  initMobileMenu();
+  renderProjects("all");
+  initFilters();
+  initScrollAnimations();
+  initScrollTop();
+  initContactForm();
+});
+
+// --- NAVBAR scroll effect ---
+function initNavbar() {
+  const navbar = document.querySelector(".navbar");
+  const links = document.querySelectorAll(".nav-links a");
+
+  window.addEventListener("scroll", () => {
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+    updateActiveLink(links);
+  });
+  updateActiveLink(links);
+}
+
+function updateActiveLink(links) {
+  const sections = document.querySelectorAll(".section, .hero");
+  let current = "";
+  sections.forEach((s) => {
+    if (window.scrollY >= s.offsetTop - 200) {
+      current = s.getAttribute("id");
+    }
+  });
+  links.forEach((l) => {
+    l.classList.toggle("active", l.getAttribute("href") === "#" + current);
+  });
+}
+
+// --- MOBILE MENU ---
+function initMobileMenu() {
+  const toggle = document.querySelector(".nav-toggle");
+  const menu = document.querySelector(".nav-links");
+  if (!toggle) return;
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("open");
+    const spans = toggle.querySelectorAll("span");
+    if (menu.classList.contains("open")) {
+      spans[0].style.transform = "rotate(45deg) translate(5px, 5px)";
+      spans[1].style.opacity = "0";
+      spans[2].style.transform = "rotate(-45deg) translate(5px, -5px)";
+    } else {
+      spans[0].style.transform = "";
+      spans[1].style.opacity = "";
+      spans[2].style.transform = "";
+    }
+  });
+
+  menu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("open");
+      const spans = toggle.querySelectorAll("span");
+      spans[0].style.transform = "";
+      spans[1].style.opacity = "";
+      spans[2].style.transform = "";
+    });
+  });
+}
+
+// --- RENDER PROJECTS ---
+function renderProjects(filter) {
+  const grid = document.getElementById("projects-grid");
+  if (!grid) return;
+
+  const filtered =
+    filter === "all"
+      ? projects
+      : projects.filter((p) => p.category === filter);
+
+  grid.innerHTML = "";
+
+  filtered.forEach((project, index) => {
+    const card = document.createElement("div");
+    card.className = "project-card";
+    card.style.transitionDelay = index * 0.1 + "s";
+
+    const icons = {
+      reseaux: "🌐",
+      cloud: "☁️",
+      securite: "🔒",
+      voip: "📞",
+      dev: "💻",
+    };
+    const icon = icons[project.category] || "💻";
+
+    const imageHTML = project.image
+      ? `<img src="${project.image}" alt="${project.title}" />`
+      : `<div class="project-image-placeholder cat-${project.category}">${icon}</div>`;
+
+    card.innerHTML = `
+      <div class="project-image">
+        ${project.featured ? '<span class="project-featured">★ Featured</span>' : ""}
+        ${imageHTML}
+        <div class="project-overlay">
+          <a href="${project.liveUrl}" target="_blank" title="Voir le site">🔗</a>
+          <a href="${project.githubUrl}" target="_blank" title="Code source">💻</a>
+        </div>
+      </div>
+      <div class="project-body">
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+        <div class="project-tech">
+          ${project.technologies.map((t) => `<span>${t}</span>`).join("")}
+        </div>
+      </div>
+    `;
+
+    grid.appendChild(card);
+
+    // Animate in
+    requestAnimationFrame(() => {
+      setTimeout(() => card.classList.add("visible"), 50 + index * 100);
+    });
+  });
+}
+
+// --- FILTER BUTTONS ---
+function initFilters() {
+  const bar = document.getElementById("filter-bar");
+  if (!bar) return;
+
+  // Render filter buttons
+  bar.innerHTML = "";
+  categories.forEach((cat) => {
+    const btn = document.createElement("button");
+    btn.className = "filter-btn" + (cat.key === "all" ? " active" : "");
+    btn.textContent = cat.label;
+    btn.dataset.filter = cat.key;
+    btn.addEventListener("click", () => {
+      bar.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      renderProjects(cat.key);
+    });
+    bar.appendChild(btn);
+  });
+}
+
+// --- SCROLL ANIMATIONS ---
+function initScrollAnimations() {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("revealed");
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+  );
+
+  document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+}
+
+// --- SCROLL TO TOP ---
+function initScrollTop() {
+  const btn = document.getElementById("scroll-top");
+  if (!btn) return;
+
+  window.addEventListener("scroll", () => {
+    btn.classList.toggle("visible", window.scrollY > 500);
+  });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+// --- CONTACT FORM ---
+function initContactForm() {
+  const form = document.getElementById("contact-form");
+  if (!form) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const btn = form.querySelector(".form-submit");
+    const original = btn.textContent;
+    btn.textContent = "✓ Message envoye !";
+    btn.style.background = "linear-gradient(135deg, #22c55e, #16a34a)";
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.style.background = "";
+      form.reset();
+    }, 2500);
+  });
+}
