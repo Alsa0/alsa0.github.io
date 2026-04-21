@@ -560,30 +560,43 @@ button {
   box-shadow: var(--shadow-glow);
 }
 
-/* --- TIMELINE --- */
+/* --- TIMELINE ALTERNÉE --- */
 .timeline {
   position: relative;
-  padding-left: 40px;
+  padding: 0;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 12px;
+  left: 50%;
   top: 0;
   bottom: 0;
   width: 2px;
+  transform: translateX(-50%);
   background: linear-gradient(to bottom, #00ffb3, transparent);
 }
 
 .timeline-item {
   position: relative;
+  width: 50%;
   margin-bottom: 40px;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  padding-right: 48px;
+  padding-left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  padding-left: 48px;
+  padding-right: 0;
 }
 
 .timeline-dot {
   position: absolute;
-  left: -34px;
   top: 20px;
   width: 14px;
   height: 14px;
@@ -591,6 +604,17 @@ button {
   background: #00ffb3;
   border: 3px solid var(--bg-primary);
   box-shadow: 0 0 10px rgba(0, 255, 179, 0.5);
+  z-index: 2;
+}
+
+.timeline-item:nth-child(odd) .timeline-dot {
+  right: -7px;
+  left: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+  left: -7px;
+  right: auto;
 }
 
 .timeline-date {
@@ -604,27 +628,28 @@ button {
 .timeline-card {
   padding: 24px;
   background: var(--bg-glass);
-  border: 1px solid var(--border-glass);
+  border: 1px solid rgba(0, 255, 179, 0.1);
   border-radius: var(--radius-md);
   backdrop-filter: blur(10px);
   transition: var(--transition-smooth);
 }
 
 .timeline-card:hover {
-  transform: translateX(8px);
-  border-color: rgba(0, 255, 179, 0.3);
-  box-shadow: var(--shadow-glow);
+  transform: translateX(4px);
+  border-color: rgba(0, 255, 179, 0.25);
+  box-shadow: 0 0 20px rgba(0, 255, 179, 0.08);
 }
 
 .timeline-card h3 {
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 6px;
+  color: #f0f0f5;
 }
 
 .timeline-company {
   font-size: 0.85rem;
-  color: #00ffb3;
+  color: #7abfa0;
   font-weight: 500;
   display: block;
   margin-bottom: 10px;
@@ -648,9 +673,35 @@ button {
   font-size: 0.75rem;
   font-weight: 500;
   border-radius: 100px;
-  background: rgba(0, 255, 179, 0.1);
-  border: 1px solid rgba(0, 255, 179, 0.2);
-  color: #00ffb3;
+  background: rgba(0, 255, 179, 0.06);
+  border: 1px solid rgba(0, 255, 179, 0.15);
+  color: #7abfa0;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 12px;
+  }
+
+  .timeline-item,
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    width: 100%;
+    left: 0;
+    padding-left: 36px;
+    padding-right: 0;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-dot,
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 5px;
+    right: auto;
+  }
+
+  .timeline-card:hover {
+    transform: translateX(4px);
+  }
 }
 
 .projects-grid {
@@ -1099,6 +1150,29 @@ button {
   .hero h1 {
     font-size: 2.4rem;
     letter-spacing: -1px;
+  }
+
+  .timeline::before {
+    left: 12px;
+  }
+
+  .timeline-item,
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    width: 100%;
+    left: 0;
+    padding-left: 36px;
+    padding-right: 0;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-dot,
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 5px;
+    right: auto;
+  }
+
+  .timeline-card:hover {
+    transform: translateX(4px);
   }
 
   .projects-grid {
