@@ -560,6 +560,99 @@ button {
   box-shadow: var(--shadow-glow);
 }
 
+/* --- TIMELINE --- */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #00ffb3, transparent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -34px;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #00ffb3;
+  border: 3px solid var(--bg-primary);
+  box-shadow: 0 0 10px rgba(0, 255, 179, 0.5);
+}
+
+.timeline-date {
+  font-size: 0.82rem;
+  color: #00ffb3;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.timeline-card {
+  padding: 24px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(10px);
+  transition: var(--transition-smooth);
+}
+
+.timeline-card:hover {
+  transform: translateX(8px);
+  border-color: rgba(0, 255, 179, 0.3);
+  box-shadow: var(--shadow-glow);
+}
+
+.timeline-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.timeline-company {
+  font-size: 0.85rem;
+  color: #00ffb3;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.timeline-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.timeline-tags span {
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 100px;
+  background: rgba(0, 255, 179, 0.1);
+  border: 1px solid rgba(0, 255, 179, 0.2);
+  color: #00ffb3;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
