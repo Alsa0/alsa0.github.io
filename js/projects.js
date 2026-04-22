@@ -140,7 +140,7 @@ const projects = [
   },
   {
     id: 6,
-    title: "🌐 App Web État Civil",
+    title: "📱 App Web État Civil",
     description: "Développement d'une application web de remontée des statistiques.",
     details: `
       <h4>🎯 Contexte</h4>
@@ -227,5 +227,5 @@ const categories = [
   { key: "cloud", label: "☁️ Cloud" },
   { key: "securite", label: "🔒 Sécurité" },
   { key: "voip", label: "📞 VoIP" },
-  { key: "dev", label: "💻 Dev" },
+  { key: "dev", label: "📱 Dev" },
 ];
