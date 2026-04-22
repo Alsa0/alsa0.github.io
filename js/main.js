@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollAnimations();
   initScrollTop();
   initContactForm();
+  initProjectModal();
 });
 
 // --- NAVBAR scroll effect ---
@@ -116,6 +117,9 @@ function renderProjects(filter) {
       </div>
     `;
 
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', () => openModal(project));
+
     grid.appendChild(card);
 
     // Animate in
@@ -193,4 +197,52 @@ function initContactForm() {
       form.reset();
     }, 2500);
   });
+}
+
+// --- PROJECT MODAL ---
+function initProjectModal() {
+  const modal = document.createElement('div');
+  modal.id = 'project-modal';
+  modal.className = 'project-modal';
+  modal.innerHTML = `
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close">✕</button>
+      <div class="modal-icon"></div>
+      <h2 class="modal-title"></h2>
+      <span class="modal-category"></span>
+      <p class="modal-desc"></p>
+      <div class="modal-tech"></div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  modal.querySelector('.modal-overlay').addEventListener('click', closeModal);
+  modal.querySelector('.modal-close').addEventListener('click', closeModal);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+}
+
+function openModal(project) {
+  const modal = document.getElementById('project-modal');
+  const icons = { reseaux: '🌐', cloud: '☁️', securite: '🔒', voip: '📞', dev: '💻' };
+
+  modal.querySelector('.modal-icon').textContent = icons[project.category] || '💻';
+  modal.querySelector('.modal-title').textContent = project.title;
+  modal.querySelector('.modal-category').textContent = project.category.toUpperCase();
+  modal.querySelector('.modal-desc').textContent = project.description;
+  modal.querySelector('.modal-tech').innerHTML = project.technologies
+    .map(t => `<span>${t}</span>`).join('');
+
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  const modal = document.getElementById('project-modal');
+  if (modal) {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
 }
