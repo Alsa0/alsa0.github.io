@@ -59,7 +59,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "🔒 Sécurité & Pare-feux",
+    title: "🧱 Sécurité & Pare-feux",
     description: "Configuration de politiques de sécurité avancées.",
     details: `
       <h4>🎯 Contexte</h4>
@@ -227,5 +227,5 @@ const categories = [
   { key: "cloud", label: "☁️ Cloud" },
   { key: "securite", label: "🔒 Sécurité" },
   { key: "voip", label: "📞 VoIP" },
-  { key: "dev", label: "📱 Dev" },
+  { key: "dev", label: "💻 Dev" },
 ];
