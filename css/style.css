@@ -1481,3 +1481,49 @@ button {
   border: 1px solid rgba(0, 255, 179, 0.2);
   color: #00ffb3;
 }
+
+.modal-desc h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #00ffb3;
+  margin: 16px 0 8px 0;
+}
+
+.modal-desc h4:first-child {
+  margin-top: 0;
+}
+
+.modal-desc p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.modal-desc ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-desc ul li {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  padding: 4px 0 4px 20px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.modal-desc ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #00ffb3;
+}
+
+/* Scroll si contenu trop long */
+.modal-content {
+  max-height: 85vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 255, 179, 0.3) transparent;
+}

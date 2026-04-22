@@ -231,7 +231,7 @@ function openModal(project) {
   modal.querySelector('.modal-icon').textContent = icons[project.category] || '💻';
   modal.querySelector('.modal-title').textContent = project.title;
   modal.querySelector('.modal-category').textContent = project.category.toUpperCase();
-  modal.querySelector('.modal-desc').textContent = project.description;
+  modal.querySelector('.modal-desc').innerHTML = project.details || project.description;
   modal.querySelector('.modal-tech').innerHTML = project.technologies
     .map(t => `<span>${t}</span>`).join('');
 
