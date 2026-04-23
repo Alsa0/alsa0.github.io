@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollTop();
   initContactForm();
   initProjectModal();
+  initTypingEffect();
 });
 
 // --- NAVBAR scroll effect ---
@@ -245,4 +246,54 @@ function closeModal() {
     modal.classList.remove('open');
     document.body.style.overflow = '';
   }
+}
+
+// --- TYPING EFFECT ---
+function initTypingEffect() {
+  const roles = [
+    "Ingénieur Réseaux & Infrastructures",
+    "Ingénieur Systèmes",
+    "Ingénieur Cloud & Virtualisation",
+    "Concepteur de Solutions IT",
+    "En apprentissage DevOps & Automatisation",
+    "Designer & Créatif 🎨",
+  ];
+
+  const el = document.getElementById('typed-text');
+  if (!el) return;
+
+  let roleIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const typingSpeed = 60;
+  const deletingSpeed = 30;
+  const pauseEnd = 2000;
+  const pauseStart = 400;
+
+  function type() {
+    const current = roles[roleIndex];
+
+    if (!isDeleting) {
+      el.textContent = current.substring(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === current.length) {
+        isDeleting = true;
+        setTimeout(type, pauseEnd);
+        return;
+      }
+    } else {
+      el.textContent = current.substring(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        setTimeout(type, pauseStart);
+        return;
+      }
+    }
+
+    setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
+  }
+
+  type();
 }
