@@ -254,7 +254,6 @@ function initTypingEffect() {
     "Ingénieur Réseaux & Infrastructures",
     "Ingénieur Systèmes",
     "Ingénieur Cloud & Virtualisation",
-    "Concepteur de Solutions IT",
     "En apprentissage DevOps & Automatisation",
     "Designer & Créatif 🎨",
   ];
