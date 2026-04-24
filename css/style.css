@@ -494,9 +494,10 @@ button {
 /* --- ABOUT SECTION --- */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 48px;
 }
 
 .about-text h3 {
@@ -514,9 +515,9 @@ button {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  margin-top: 32px;
+  margin-top: 0;
 }
 
 .skill-card {
@@ -526,6 +527,9 @@ button {
   border-radius: var(--radius-md);
   backdrop-filter: blur(10px);
   transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .skill-card:hover {
@@ -546,8 +550,10 @@ button {
 }
 
 .skill-card p {
-  font-size: 0.82rem;
+  font-size: 0.80rem;
   color: var(--text-muted);
+  line-height: 1.6;
+  flex: 1;
 }
 
 .about-visual {
