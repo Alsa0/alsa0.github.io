@@ -494,7 +494,7 @@ button {
 /* --- ABOUT SECTION --- */
 .about-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: start;
   margin-bottom: 48px;
@@ -518,18 +518,19 @@ button {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   margin-top: 0;
+  margin-bottom: 48px;
 }
 
 .skill-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 20px;
   background: var(--bg-glass);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-md);
   backdrop-filter: blur(10px);
   transition: var(--transition-smooth);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }
 
 .skill-card:hover {
@@ -1210,7 +1211,6 @@ button {
 @media (max-width: 900px) {
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
   }
 
   .about-visual {
@@ -1220,6 +1220,10 @@ button {
   .about-avatar {
     width: 260px;
     height: 340px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact-grid {
@@ -1310,6 +1314,10 @@ button {
   .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 
   .stats-bar {
