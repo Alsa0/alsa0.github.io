@@ -254,8 +254,7 @@ function initTypingEffect() {
     "Ingénieur Réseaux & Infrastructures",
     "Ingénieur Systèmes",
     "Ingénieur Cloud & Virtualisation",
-    "En apprentissage DevOps & Automatisation",
-    "Designer & Créatif 🎨",
+    "Designer & Créatif",
   ];
 
   const el = document.getElementById('typed-text');
