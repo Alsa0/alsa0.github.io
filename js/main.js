@@ -112,6 +112,7 @@ function renderProjects(filter) {
       <div class="project-body">
         <h3>${project.title}</h3>
         <p>${project.description}</p>
+        ${project.client ? `<div class="project-client">🏢 ${project.client}</div>` : ""}
         <div class="project-tech">
           ${project.technologies.map((t) => `<span>${t}</span>`).join("")}
         </div>

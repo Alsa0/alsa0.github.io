@@ -5,35 +5,263 @@
 const projects = [
   {
     id: 1,
-    title: "🏢 Infrastructure NextHope",
-    description: "Administration et supervision d'infrastructures réseau, systèmes et sécurité.",
+    title: "🔒 Modernisation Infrastructure Viziocraft",
+    description: "Modernisation et sécurisation de l'infrastructure réseau : pare-feu, stockage centralisé et optimisation des performances.",
+    client: "Client : Viziocraft",
     details: `
       <h4>🎯 Contexte</h4>
-      <p>Mission principale en tant qu'Ingénieur IT chez NextHope depuis août 2024. Responsable de la conception, administration et supervision des infrastructures réseau, systèmes et sécurité.</p>
-      
+      <p>Projet de modernisation de l'infrastructure informatique visant à renforcer la sécurité, améliorer le stockage centralisé et optimiser les performances du réseau interne.</p>
+
       <h4>🔧 Réalisations</h4>
       <ul>
-        <li>Configuration et maintenance de routeurs et switches Cisco</li>
-        <li>Administration des pare-feux FortiGate et politiques de sécurité</li>
-        <li>Déploiement et gestion de VMs sur VMware vSphere/ESXi</li>
-        <li>Mise en place de la téléphonie IP et VoIP</li>
-        <li>Rédaction de documentation technique détaillée</li>
+        <li>Audit de l'infrastructure existante et identification des besoins</li>
+        <li>Déploiement et configuration d'un pare-feu FortiGate</li>
+        <li>Mise en place d'un serveur NAS Synology pour le partage de fichiers</li>
+        <li>Configuration des commutateurs Aruba</li>
+        <li>Refonte et optimisation du câblage réseau</li>
+        <li>Élaboration du BOM, SOW et documentation technique</li>
       </ul>
 
       <h4>📈 Résultats</h4>
-      <p>Infrastructure stable et sécurisée avec une disponibilité optimale des services pour les clients.</p>
+      <p>Infrastructure sécurisée et modernisée avec un stockage centralisé performant et une documentation complète.</p>
     `,
     image: null,
-    technologies: ["Cisco", "FortiGate", "VMware", "Linux", "VoIP"],
-    category: "reseaux",
+    technologies: ["FortiGate", "Synology NAS", "Aruba", "VLAN", "VPN", "TCP/IP"],
+    category: "securite",
     liveUrl: "#",
     githubUrl: "#",
     featured: true,
   },
   {
     id: 2,
+    title: "🌐 Refonte Infrastructure LAN I&P",
+    description: "Refonte complète du réseau local avec amélioration de la couverture Wi-Fi et gestion centralisée via Omada Cloud.",
+    client: "Client : Investisseurs & Partenaires",
+    details: `
+      <h4>🎯 Contexte</h4>
+      <p>Projet de refonte complète du réseau local afin d'améliorer la connectivité, la couverture Wi-Fi et la gestion centralisée des équipements.</p>
+
+      <h4>🔧 Réalisations</h4>
+      <ul>
+        <li>Configuration des routeurs et switchs TP-Link</li>
+        <li>Déploiement des points d'accès Wi-Fi TP-Link</li>
+        <li>Mise en place de la plateforme Omada Cloud Management</li>
+        <li>Supervision des équipements et des performances réseau</li>
+        <li>Amélioration du câblage structuré</li>
+        <li>Configuration d'un VPN d'accès distant au NAS</li>
+      </ul>
+
+      <h4>📈 Résultats</h4>
+      <p>Réseau entièrement refondu avec une couverture Wi-Fi optimale et une gestion centralisée via le cloud.</p>
+    `,
+    image: null,
+    technologies: ["TP-Link", "Omada Cloud", "Wi-Fi", "VLAN", "VPN", "DHCP", "DNS"],
+    category: "reseaux",
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "🎥 Solution Visioconférence QMM",
+    description: "Déploiement d'une solution de visioconférence professionnelle Cisco pour les salles de réunion.",
+    client: "Client : QMM",
+    details: `
+      <h4>🎯 Contexte</h4>
+      <p>Déploiement d'une solution de visioconférence professionnelle pour les salles de réunion de QMM.</p>
+
+      <h4>🔧 Réalisations</h4>
+      <ul>
+        <li>Installation et configuration du Cisco Room Kit EQ</li>
+        <li>Création et configuration des comptes Cisco Webex</li>
+        <li>Tests audio et vidéo complets</li>
+        <li>Formation des utilisateurs finaux</li>
+      </ul>
+
+      <h4>📈 Résultats</h4>
+      <p>Solution de visioconférence professionnelle opérationnelle, permettant des réunions collaboratives de haute qualité.</p>
+    `,
+    image: null,
+    technologies: ["Cisco Room Kit EQ", "Cisco Webex", "HDMI", "Audio/Video"],
+    category: "voip",
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: false,
+  },
+  {
+    id: 4,
+    title: "📞 Migration SIP Trunk Orange LPSA",
+    description: "Migration de l'infrastructure de téléphonie IP vers un nouveau trunk SIP Orange avec reconfiguration complète du Call Manager.",
+    client: "Client : LPSA",
+    details: `
+      <h4>🎯 Contexte</h4>
+      <p>Migration de l'infrastructure de téléphonie IP existante vers un nouveau trunk SIP Orange pour moderniser les communications.</p>
+
+      <h4>🔧 Réalisations</h4>
+      <ul>
+        <li>Analyse de la configuration existante sur Cisco Call Manager</li>
+        <li>Mise à jour des licences CUCM</li>
+        <li>Configuration du SIP Trunk Orange</li>
+        <li>Paramétrage des Call Patterns et Route Patterns</li>
+        <li>Tests des appels nationaux et internationaux</li>
+      </ul>
+
+      <h4>📈 Résultats</h4>
+      <p>Migration réussie avec une téléphonie IP modernisée et des appels nationaux et internationaux pleinement fonctionnels.</p>
+    `,
+    image: null,
+    technologies: ["Cisco CUCM", "SIP Trunk", "Orange", "VoIP", "Route Pattern"],
+    category: "voip",
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: false,
+  },
+  {
+    id: 5,
+    title: "🎥 Modernisation Visioconférence Jovena",
+    description: "Renouvellement de la solution de visioconférence avec intégration Microsoft Teams via Yealink MeetingBar.",
+    client: "Client : Jovena",
+    details: `
+      <h4>🎯 Contexte</h4>
+      <p>Renouvellement de la solution de visioconférence pour améliorer les réunions collaboratives et l'intégration avec l'écosystème Microsoft.</p>
+
+      <h4>🔧 Réalisations</h4>
+      <ul>
+        <li>Installation du Yealink MeetingBar</li>
+        <li>Intégration complète avec Microsoft Teams</li>
+        <li>Configuration des comptes et licences</li>
+        <li>Tests fonctionnels audio et vidéo</li>
+        <li>Formation des utilisateurs</li>
+      </ul>
+
+      <h4>📈 Résultats</h4>
+      <p>Solution moderne et intégrée à Microsoft Teams, améliorant significativement la qualité des réunions collaboratives.</p>
+    `,
+    image: null,
+    technologies: ["Yealink MeetingBar", "Microsoft Teams", "Video Conferencing"],
+    category: "voip",
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: false,
+  },
+  {
+    id: 6,
+    title: "📞 Rétablissement Appels Internationaux PNUD",
+    description: "Restauration des appels internationaux via l'opérateur YAS après interruption de la liaison VSAT.",
+    client: "Client : PNUD",
+    details: `
+      <h4>🎯 Contexte</h4>
+      <p>Restauration urgente de la possibilité d'effectuer des appels internationaux via l'opérateur YAS après l'interruption de la liaison VSAT.</p>
+
+      <h4>🔧 Réalisations</h4>
+      <ul>
+        <li>Analyse et diagnostic de la configuration Cisco Call Manager</li>
+        <li>Reconfiguration des Route Patterns</li>
+        <li>Mise à jour des droits d'appels internationaux</li>
+        <li>Coordination avec l'opérateur YAS</li>
+        <li>Tests de validation complets</li>
+      </ul>
+
+      <h4>📈 Résultats</h4>
+      <p>Appels internationaux rétablis rapidement, assurant la continuité des communications pour le PNUD.</p>
+    `,
+    image: null,
+    technologies: ["Cisco CUCM", "YAS", "VoIP", "Route Pattern", "VSAT"],
+    category: "voip",
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: false,
+  },
+  {
+    id: 7,
+    title: "📱 Ligne Verte Ministère Éducation Nationale",
+    description: "Déploiement d'une plateforme call center pour la gestion de la ligne verte nationale avec PBX Yeastar.",
+    client: "Client : Ministère de l'Éducation Nationale",
+    details: `
+      <h4>🎯 Contexte</h4>
+      <p>Déploiement d'une plateforme de centre d'appels destinée à la gestion de la ligne verte nationale du Ministère de l'Éducation Nationale.</p>
+
+      <h4>🔧 Réalisations</h4>
+      <ul>
+        <li>Installation et configuration du PBX Yeastar</li>
+        <li>Déploiement des téléphones IP Yealink</li>
+        <li>Configuration des extensions internes</li>
+        <li>Intégration du SIP Trunk YAS</li>
+        <li>Paramétrage des routes d'appels</li>
+        <li>Assistance et coordination avec les équipes YAS</li>
+      </ul>
+
+      <h4>📈 Résultats</h4>
+      <p>Plateforme call center opérationnelle permettant une gestion efficace de la ligne verte nationale.</p>
+    `,
+    image: null,
+    technologies: ["Yeastar PBX", "Yealink", "SIP Trunk", "YAS", "VoIP", "Call Center"],
+    category: "voip",
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: true,
+  },
+  {
+    id: 8,
+    title: "🔄 SWAP Routeurs de Secours BMOI",
+    description: "Remplacement des routeurs de secours défaillants par de nouveaux équipements 4G avec VPN et basculement automatique.",
+    client: "Client : BMOI",
+    details: `
+      <h4>🎯 Contexte</h4>
+      <p>Remplacement urgent des routeurs de secours défaillants pour assurer la continuité de service des succursales BMOI.</p>
+
+      <h4>🔧 Réalisations</h4>
+      <ul>
+        <li>Installation et configuration des routeurs Cisco 4G</li>
+        <li>Mise en place de tunnels VPN vers les succursales</li>
+        <li>Configuration du basculement automatique (Failover)</li>
+        <li>Tests de continuité de service</li>
+        <li>Documentation technique complète</li>
+      </ul>
+
+      <h4>📈 Résultats</h4>
+      <p>Continuité de service assurée avec un basculement automatique fiable vers la liaison 4G en cas de panne.</p>
+    `,
+    image: null,
+    technologies: ["Cisco Router", "4G LTE", "VPN", "Failover", "IPsec"],
+    category: "reseaux",
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: false,
+  },
+  {
+    id: 9,
+    title: "📡 Déploiement Routeurs Fianarantsoa & Toliara",
+    description: "Installation et configuration de routeurs DMVPN pour renforcer la connectivité inter-sites en régions.",
+    client: "Client : Confidentiel",
+    details: `
+      <h4>🎯 Contexte</h4>
+      <p>Déploiement de nouveaux routeurs dans les villes de Fianarantsoa et Toliara pour renforcer la connectivité inter-sites.</p>
+
+      <h4>🔧 Réalisations</h4>
+      <ul>
+        <li>Installation des routeurs Cisco 4G sur site</li>
+        <li>Configuration de DMVPN pour l'interconnexion des sites</li>
+        <li>Intégration au réseau existant</li>
+        <li>Tests de connectivité et de performance</li>
+        <li>Documentation technique</li>
+      </ul>
+
+      <h4>📈 Résultats</h4>
+      <p>Connectivité inter-sites renforcée avec une liaison sécurisée via DMVPN entre les différents sites.</p>
+    `,
+    image: null,
+    technologies: ["Cisco Router", "DMVPN", "4G LTE", "IPsec", "Routing"],
+    category: "reseaux",
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: false,
+  },
+  {
+    id: 10,
     title: "☁️ Cloud OpenStack — ESPA",
-    description: "Conception et mise en place d'une infrastructure cloud complète.",
+    description: "Conception et mise en place d'une infrastructure cloud privée complète basée sur OpenStack.",
+    client: null,
     details: `
       <h4>🎯 Contexte</h4>
       <p>Projet de fin d'études réalisé à l'École Supérieure Polytechnique d'Antsiranana (Octobre 2023 – Mars 2024). Conception d'un cloud privé complet basé sur OpenStack.</p>
@@ -51,73 +279,20 @@ const projects = [
       <p>Infrastructure cloud privée fonctionnelle permettant le déploiement rapide de machines virtuelles.</p>
     `,
     image: null,
-    technologies: ["OpenStack", "Linux", "Virtualisation", "Neutron"],
+    technologies: ["OpenStack", "Nova", "Neutron", "Glance", "Linux", "Virtualisation"],
     category: "cloud",
     liveUrl: "#",
     githubUrl: "#",
     featured: true,
   },
   {
-    id: 3,
-    title: "🧱 Sécurité & Pare-feux",
-    description: "Configuration de politiques de sécurité avancées.",
-    details: `
-      <h4>🎯 Contexte</h4>
-      <p>Mise en place et configuration de solutions de sécurité réseau pour plusieurs clients chez NextHope.</p>
-
-      <h4>🔧 Réalisations</h4>
-      <ul>
-        <li>Configuration de règles et politiques sur FortiGate</li>
-        <li>Déploiement et tuning de Cisco ASA et Firepower</li>
-        <li>Mise en place de pfSense comme pare-feu open source</li>
-        <li>Configuration IDS/IPS Snort pour détection d'intrusions</li>
-        <li>Déploiement de portail captif pour accès Wi-Fi sécurisé</li>
-      </ul>
-
-      <h4>📈 Résultats</h4>
-      <p>Réduction significative des incidents de sécurité et conformité aux bonnes pratiques.</p>
-    `,
-    image: null,
-    technologies: ["FortiGate", "Cisco ASA", "pfSense", "Snort IDS"],
-    category: "securite",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: true,
-  },
-  {
-    id: 4,
-    title: "📞 Téléphonie VoIP — Ministère",
-    description: "Mise en place d'un système VoIP interne complet.",
-    details: `
-      <h4>🎯 Contexte</h4>
-      <p>Stage réalisé à la DSI du Ministère de l'Économie et des Finances (Novembre 2019 – Février 2020). Déploiement d'un système de téléphonie IP interne.</p>
-
-      <h4>🔧 Réalisations</h4>
-      <ul>
-        <li>Configuration des trunks SIP et dial-peers</li>
-        <li>Mise en place des codecs optimisés (G.711, G.729)</li>
-        <li>Routage d'appels inter-services</li>
-        <li>Configuration de la messagerie vocale</li>
-        <li>Tests et validation du système</li>
-      </ul>
-
-      <h4>📈 Résultats</h4>
-      <p>Système VoIP interne fonctionnel réduisant les coûts de communication entre services.</p>
-    `,
-    image: null,
-    technologies: ["Cisco CME", "Asterisk", "SIP", "Yeastar"],
-    category: "voip",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-  },
-  {
-    id: 5,
+    id: 11,
     title: "📡 Réseau WiMAX — CIR DIANA",
-    description: "Configuration et optimisation de réseaux WiMAX.",
+    description: "Configuration et optimisation de réseaux WiMAX avec déploiement Ubiquiti et études de liaison radio.",
+    client: null,
     details: `
       <h4>🎯 Contexte</h4>
-      <p>Stage à la CIR du Service Régional de Budget DIANA (Septembre – Décembre 2022). Déploiement et optimisation d'un réseau WiMAX pour la région.</p>
+      <p>Stage à la CIR du Service Régional de Budget DIANA (Septembre – Décembre 2022). Déploiement et optimisation d'un réseau WiMAX.</p>
 
       <h4>🔧 Réalisations</h4>
       <ul>
@@ -132,16 +307,17 @@ const projects = [
       <p>Couverture réseau améliorée sur la région DIANA avec une connectivité stable.</p>
     `,
     image: null,
-    technologies: ["WiMAX", "Ubiquiti", "Radio", "LAN/WAN"],
+    technologies: ["WiMAX", "Ubiquiti", "Radio", "LAN/WAN", "Fresnel"],
     category: "reseaux",
     liveUrl: "#",
     githubUrl: "#",
     featured: false,
   },
   {
-    id: 6,
-    title: "📱 App Web État Civil",
-    description: "Développement d'une application web de remontée des statistiques.",
+    id: 12,
+    title: "🌐 App Web État Civil",
+    description: "Développement d'une application web de remontée des statistiques d'état civil pour le Ministère de l'Intérieur.",
+    client: null,
     details: `
       <h4>🎯 Contexte</h4>
       <p>Stage à la DSI du Ministère de l'Intérieur et de la Décentralisation (Août – Novembre 2018). Développement d'une application de gestion des statistiques d'état civil.</p>
@@ -161,60 +337,6 @@ const projects = [
     image: null,
     technologies: ["PHP", "HTML", "CSS", "MySQL"],
     category: "dev",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-  },
-  {
-    id: 7,
-    title: "📹 Vidéosurveillance IP",
-    description: "Installation et configuration de systèmes de vidéosurveillance IP.",
-    details: `
-      <h4>🎯 Contexte</h4>
-      <p>Mission réalisée chez NextHope pour plusieurs clients nécessitant une solution de surveillance IP complète.</p>
-
-      <h4>🔧 Réalisations</h4>
-      <ul>
-        <li>Installation et configuration des caméras Hikvision</li>
-        <li>Mise en place du NVR et stockage des enregistrements</li>
-        <li>Configuration de l'accès distant web et mobile</li>
-        <li>Mise en place des alertes et notifications</li>
-        <li>Formation des utilisateurs</li>
-      </ul>
-
-      <h4>📈 Résultats</h4>
-      <p>Système de surveillance opérationnel avec accès distant sécurisé 24h/24.</p>
-    `,
-    image: null,
-    technologies: ["Hikvision", "NVR", "IP Camera", "Réseau"],
-    category: "securite",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-  },
-  {
-    id: 8,
-    title: "🖥️ Virtualisation Multi-Plateformes",
-    description: "Déploiement de VM sur VMware vSphere/ESXi et Proxmox VE.",
-    details: `
-      <h4>🎯 Contexte</h4>
-      <p>Déploiement et gestion de plateformes de virtualisation pour plusieurs clients chez NextHope.</p>
-
-      <h4>🔧 Réalisations</h4>
-      <ul>
-        <li>Installation et configuration de VMware vSphere/ESXi</li>
-        <li>Déploiement de Proxmox VE comme alternative open source</li>
-        <li>Gestion centralisée via vCenter Server</li>
-        <li>Migration de serveurs physiques vers VMs</li>
-        <li>Mise en place de snapshots et sauvegardes</li>
-      </ul>
-
-      <h4>📈 Résultats</h4>
-      <p>Réduction des coûts infrastructure de 40% grâce à la consolidation des serveurs.</p>
-    `,
-    image: null,
-    technologies: ["VMware", "Proxmox", "ESXi", "vCenter"],
-    category: "cloud",
     liveUrl: "#",
     githubUrl: "#",
     featured: false,
