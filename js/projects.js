@@ -86,6 +86,42 @@ const projects = [
   },
   {
     id: 4,
+    title: "DocGen Platform",
+    description: "Plateforme d'ingénierie documentaire basée sur l'IA pour automatiser la génération de BOM, SOW, OT et rapports techniques.",
+    client: "Usage interne : NextHope",
+    details: `
+    <h4>🎯 Contexte</h4>
+    <p>Plateforme développée en interne chez NextHope pour automatiser et accélérer la création de documents commerciaux et techniques (BOM, SOW, OT, IR). L'application combine l'intégration Gmail, l'analyse IA multi-modèle et une bibliothèque locale d'équipements afin de transformer les demandes clients en propositions complètes en quelques minutes.</p>
+
+    <h4>🔧 Réalisations</h4>
+    <ul>
+      <li>Analyse des besoins métier et conception de l'architecture applicative</li>
+      <li>Développement du dashboard RFP avec synchronisation Gmail</li>
+      <li>Mise en place du suivi de statut des demandes (En attente, Attribué, Traité)</li>
+      <li>Développement du moteur d'analyse IA des besoins clients</li>
+      <li>Extraction automatique des équipements et spécifications techniques</li>
+      <li>Création d'une bibliothèque BOM locale basée sur SQLite</li>
+      <li>Import et déduplication automatique des équipements depuis Excel</li>
+      <li>Génération automatique de trois offres (Économique, Standard, Premium)</li>
+      <li>Calcul automatique des coûts et conversion en Ariary (MGA)</li>
+      <li>Génération des documents BOM au format Excel</li>
+      <li>Génération des documents SOW, OT et IR au format Word</li>
+      <li>Intégration de l'IA multi-modèle avec basculement automatique</li>
+      <li>Connexion aux API Gemini 2.5 Flash et Groq Llama 3.3</li>
+      <li>Auto-enrichissement de la base avec les nouveaux équipements détectés</li>
+      <li>Tests fonctionnels et validation des résultats générés</li>
+      <li>Optimisation des performances et de la fiabilité du système</li>
+    </ul>
+
+    <h4>🛠️ Technologies</h4>
+    <p>Python, Flask, SQLite, Gmail API, Gemini AI, Groq API, OpenPyXL, Python-Docx, Pandas, HTML, CSS, JavaScript</p>
+ `,
+    image: null,
+    technologies: ["Python", "FastAPI", "React", "Gemini AI", "Groq", "SQLite", "Gmail API", "Pandas", "Python-Docx", "Docker"],
+    category: "dev",
+  },
+  {
+    id: 5,
     title: "Rétablissement Appels Internationaux PNUD",
     description: "Restauration des appels internationaux via l'opérateur YAS après interruption de la liaison VSAT.",
     client: "Client : PNUD",
@@ -113,7 +149,7 @@ const projects = [
     category: "voip",
   },
   {
-    id: 5,
+    id: 6,
     title: "SWAP Routeurs de Secours BMOI",
     description: "Remplacement des routeurs de secours défaillants par de nouveaux équipements 4G avec VPN et basculement automatique.",
     client: "Client : BMOI",
@@ -137,7 +173,7 @@ const projects = [
     category: "reseaux",
   },
   {
-    id: 6,
+    id: 7,
     title: "Mise en place de la Ligne Verte",
     description: "Déploiement d'une plateforme call center pour la gestion de la ligne verte nationale avec PBX Yeastar.",
     client: "Client : Ministère de l'Éducation Nationale",
@@ -168,7 +204,7 @@ const projects = [
     featured: true,
   },
   {
-    id: 7,
+    id: 8,
     title: "Déploiement des nouveaux routeurs",
     description: "Installation et configuration de routeurs DMVPN pour renforcer la connectivité inter-sites en régions.",
     client: "Client : LPSA",
@@ -191,7 +227,7 @@ const projects = [
     category: "reseaux",
   },
   {
-    id: 8,
+    id: 9,
     title: "☁️ Cloud OpenStack — ESPA",
     description: "Conception et mise en place d'une infrastructure cloud privée complète basée sur OpenStack.",
     client: null,
@@ -219,7 +255,7 @@ const projects = [
     featured: true,
   },
   {
-    id: 11,
+    id: 10,
     title: "📡 Réseau WiMAX — CIR DIANA",
     description: "Configuration et optimisation de réseaux WiMAX avec déploiement Ubiquiti et études de liaison radio.",
     client: null,
