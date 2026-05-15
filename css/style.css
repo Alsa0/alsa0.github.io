@@ -973,9 +973,11 @@ button {
 
 .project-tech {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 8px;
-  justify-content: center;
+  overflow-x: hidden;
+  max-height: 32px;
+  justify-content: flex-start;
 }
 
 .project-tech span {
