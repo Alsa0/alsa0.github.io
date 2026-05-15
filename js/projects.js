@@ -302,8 +302,6 @@ const projects = [
         <li>Formation des utilisateurs et documentation</li>
       </ul>
 
-      <h4>📈 Résultats</h4>
-      <p>Application déployée et utilisée par plusieurs communes pour la gestion des données d'état civil.</p>
     `,
     image: null,
     technologies: ["PHP", "HTML", "CSS", "MySQL"],
@@ -311,6 +309,31 @@ const projects = [
     liveUrl: "#",
     githubUrl: "#",
     featured: false,
+  },
+  {
+    id: 14,
+    title: "ETO-Parking Diego Suarez",
+    description: "Application Android de localisation et réservation de parkings en temps réel dans la ville de Diego Suarez, avec intégration cartographique et détection des places libres.",
+    client: null,
+    details: `
+    <h4>🎯 Contexte</h4>
+    <p>Développement d'une application Android permettant aux conducteurs de localiser et réserver des places de parking disponibles en temps réel dans la ville de Diego Suarez. L'application intègre une carte interactive et un système de détection automatique des parkings libres.</p>
+
+    <h4>🔧 Réalisations</h4>
+    <ul>
+      <li>Développement de l'application mobile sous Android Studio</li>
+      <li>Intégration de Google Maps SDK pour la cartographie interactive</li>
+      <li>Affichage en temps réel des parkings disponibles sur la carte</li>
+      <li>Système de réservation de place avec confirmation</li>
+      <li>Détection automatique des places libres et occupées</li>
+      <li>Géolocalisation de l'utilisateur et navigation vers le parking</li>
+      <li>Interface utilisateur intuitive et responsive</li>
+      <li>Backend API pour la gestion des données de parking</li>
+    </ul>
+    `,
+    image: null,
+    technologies: ["Android Studio", "Java", "Google Maps SDK", "Firebase", "REST API", "GPS", "SQLite"],
+    category: "dev",
   },
 ];
 
