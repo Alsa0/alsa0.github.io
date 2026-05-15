@@ -113,7 +113,7 @@ const projects = [
     </ul>
  `,
     image: null,
-    technologies: ["Python", "FastAPI", "React", "Gemini AI", "Groq", "SQLite", "Gmail API", "Pandas", "Python-Docx", "Javascript", "HTML/CSS", "Docker"],
+    technologies: ["Python", "FastAPI", "React", "Gemini AI", "Groq", "SQLite", "Gmail API", "Docker", "Python-Docx", "Javascript", "HTML/CSS"],
     category: "dev",
   },
   {
@@ -137,7 +137,7 @@ const projects = [
       </ul>
       `,
     image: null,
-    technologies: ["Routing", "Cellular Gateway", "Failover", "IPsec", "4G LTE", "FH", "MPLS", "P2P"],
+    technologies: ["Routing", "Cellular Gateway", "Failover", "FH", "IPsec", "4G LTE", "MPLS", "P2P"],
     category: "reseaux",
   },
   {
