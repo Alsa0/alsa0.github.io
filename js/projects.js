@@ -6,7 +6,7 @@ const projects = [
   {
     id: 1,
     title: "Modernisation Infrastructure",
-    description: "Modernisation et sécurisation de l'infra-structure réseau : pare-feu, stockage centralisé et optimisation des performances.",
+    description: "Modernisation et sécurisation de l'infrastru-cture réseau : pare-feu, stockage centralisé et optimisation des performances.",
     client: "Client : Viziocraft",
     details: `
       <h4>🎯 Contexte</h4>
@@ -26,11 +26,8 @@ const projects = [
 
     `,
     image: null,
-    technologies: ["FortiGate", "FortiAnalyzer", "Synology NAS", "Aruba Instant On", "Firewall", "LAN"],
+    technologies: ["FortiGate", "Firewall", "Synology NAS", "NAS", "Aruba Instant On", "LAN"],
     category: "securite",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: true,
   },
   {
     id: 2,
@@ -57,11 +54,8 @@ const projects = [
 
     `,
     image: null,
-    technologies: ["TP-Link", "Omada Cloud", "Wi-Fi", "DHCP"],
+    technologies: ["TP-Link", "Omada Cloud", "Access Point", "LAN", "Wi-Fi", "DHCP", "VPN"],
     category: "reseaux",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: true,
   },
   {
     id: 3,
@@ -87,11 +81,8 @@ const projects = [
 
     `,
     image: null,
-    technologies: ["Cisco CUCM", "SIP Trunk", "VoIP"],
+    technologies: ["Cisco CUCM", "SIP Trunk", "VoIP", "Voice gateway", "Dial Plan", "Route Pattern"],
     category: "voip",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
   },
   {
     id: 4,
@@ -118,11 +109,8 @@ const projects = [
 
     `,
     image: null,
-    technologies: ["Cisco CUCM", "Appel international", "SIP Trunk"],
+    technologies: ["Cisco CUCM", "Call international", "SIP Trunk", "Dial Plan", "Route Plan"],
     category: "voip",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
   },
   {
     id: 5,
@@ -145,15 +133,12 @@ const projects = [
       </ul>
       `,
     image: null,
-    technologies: ["Routing", "Cellular Gateway", "Failover", "IPsec"],
+    technologies: ["Routing", "Cellular Gateway", "Failover", "IPsec", "4G LTE", "FH", "MPLS", "P2P"],
     category: "reseaux",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
   },
   {
     id: 6,
-    title: "Ligne Verte Ministère Éducation Nationale",
+    title: "Mise en place de la Ligne Verte",
     description: "Déploiement d'une plateforme call center pour la gestion de la ligne verte nationale avec PBX Yeastar.",
     client: "Client : Ministère de l'Éducation Nationale",
     details: `
@@ -176,7 +161,7 @@ const projects = [
       </ul>
     `,
     image: null,
-    technologies: ["Yeastar PBX", "Yealink IP Phone", "SIP Trunk", "Call Center"],
+    technologies: ["Yeastar PBX", "Yealink IP Phone", "SIP Trunk", "Call Center", "Routing", "Auto Provisioning"],
     category: "voip",
     liveUrl: "#",
     githubUrl: "#",
@@ -202,11 +187,8 @@ const projects = [
       </ul>
     `,
     image: null,
-    technologies: ["Routing", "DMVPN", "Cellular Gateway", "IPsec"],
+    technologies: ["Routing", "DMVPN", "Cellular Gateway", "IPsec", "4G LTE", "P2P"],
     category: "reseaux",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
   },
   {
     id: 8,
