@@ -226,26 +226,35 @@ const projects = [
     client: null,
     details: `
       <h4>🎯 Contexte</h4>
-      <p>Projet de fin d'études réalisé à l'École Supérieure Polytechnique d'Antsiranana (Octobre 2023 – Mars 2024). Conception d'un cloud privé complet basé sur OpenStack.</p>
+      <p>Projet de fin d’études portant sur la mise en place d’un cloud privé basé sur OpenStack, destiné à
+       centraliser l’hébergement des serveurs virtuels de l’Université d’Antsiranana. La plateforme permet aux
+      différentes entités, notamment l’ESPA, la DGSP et la Faculté de Médecine, de déployer des serveurs,
+      d’accéder aux ressources à distance et de faciliter le partage de fichiers entre les départements.</p>
 
       <h4>🔧 Réalisations</h4>
       <ul>
+        <li>Analyse des besoins et conception de l'architecture du cloud privé</li>
+        <li>Préparation de l'environnement réseau et des interfaces</li>
         <li>Installation et configuration des composants OpenStack : Nova, Neutron, Glance, Horizon, Keystone</li>
-        <li>Mise en place du réseau virtuel avec Neutron</li>
-        <li>Configuration du stockage avec Cinder</li>
-        <li>Déploiement automatisé des instances</li>
-        <li>Interface d'administration via Horizon</li>
+        <li>Installation et configuration de Keystone pour la gestion des identités</li>
+        <li>Installation et configuration de Glance pour la gestion des images</li>
+        <li>Installation et configuration de Nova pour le calcul et les instances</li>
+        <li>Installation et configuration de Neutron pour le réseau virtuel</li>
+        <li>Installation et configuration de Cinder pour le stockage bloc</li>
+        <li>Installation et configuration de Horizon pour l'administration web</li>
+        <li>Création des projets, utilisateurs et rôles</li>
+        <li>Configuration des réseaux virtuels, sous-réseaux et routeurs</li>
+        <li>Import des images système (Ubuntu, Debian)</li>
+        <li>Création des flavors et des quotas</li>
+        <li>Déploiement automatisé de machines virtuelles</li>
+        <li>Tests de migration des serveurs vers la plateforme cloud</li>
+        <li>Validation de l’accès distant aux ressources hébergées</li>
       </ul>
 
-      <h4>📈 Résultats</h4>
-      <p>Infrastructure cloud privée fonctionnelle permettant le déploiement rapide de machines virtuelles.</p>
     `,
     image: null,
-    technologies: ["OpenStack", "Nova", "Neutron", "Glance", "Linux", "Virtualisation"],
+    technologies: ["OpenStack", "vCloud Director", "VMware Workstation", "vSphere", "Virtualisation", "Ubuntu Server", "KVM", "QEMU", "MySQL", "RabbitMQ", "Cinder", "Horizon", "Keystone", "Neutron", "Glance", "Nova"],
     category: "cloud",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: true,
   },
   {
     id: 10,
