@@ -976,7 +976,6 @@ button {
   flex-wrap: nowrap;
   gap: 8px;
   overflow-x: hidden;
-  max-height: 32px;
   justify-content: flex-start;
 }
 
