@@ -26,7 +26,7 @@ const projects = [
 
     `,
     image: null,
-    technologies: ["FortiGate", "Synology NAS", "Aruba", "Firewall"],
+    technologies: ["FortiGate", "Synology NAS", "Firewall"],
     category: "securite",
     liveUrl: "#",
     githubUrl: "#",

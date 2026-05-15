@@ -975,7 +975,7 @@ button {
   display: flex;
   flex-wrap: nowrap;
   gap: 8px;
-  overflow-x: hidden;
+  overflow-x: auto;
   justify-content: flex-start;
 }
 
