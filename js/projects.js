@@ -81,7 +81,7 @@ const projects = [
 
     `,
     image: null,
-    technologies: ["Cisco CUCM", "SIP Trunk", "VoIP", "Voice gateway", "Dial Plan", "Route Pattern"],
+    technologies: ["Cisco CUCM", "SIP Trunk", "Voice gateway", "Dial Plan", "Route Pattern", "Firewall"],
     category: "voip",
   },
   {
@@ -109,7 +109,7 @@ const projects = [
 
     `,
     image: null,
-    technologies: ["Cisco CUCM", "Call international", "SIP Trunk", "Dial Plan", "Route Plan"],
+    technologies: ["Cisco CUCM", "SIP Trunk", "Dial Plan", "Route Plan", "Call international"],
     category: "voip",
   },
   {
