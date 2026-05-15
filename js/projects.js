@@ -5,7 +5,7 @@
 const projects = [
   {
     id: 1,
-    title: "🔒 Modernisation Infrastructure LAN",
+    title: "🔒 Modernisation Infrastructure",
     description: "Modernisation et sécurisation de l'infrastructure réseau : pare-feu, stockage centralisé et optimisation des performances.",
     client: "Client : Viziocraft",
     details: `
