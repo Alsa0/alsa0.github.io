@@ -221,7 +221,7 @@ const projects = [
   },
   {
     id: 9,
-    title: "☁️ Cloud OpenStack — ESPA",
+    title: "Cloud privé OpenStack",
     description: "Conception et mise en place d'une infra-structure cloud privée complète basée sur OpenStack.",
     client: null,
     details: `
