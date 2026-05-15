@@ -222,7 +222,7 @@ const projects = [
   {
     id: 9,
     title: "☁️ Cloud OpenStack — ESPA",
-    description: "Conception et mise en place d'une infrastructure cloud privée complète basée sur OpenStack.",
+    description: "Conception et mise en place d'une infra-structure cloud privée complète basée sur OpenStack.",
     client: null,
     details: `
       <h4>🎯 Contexte</h4>
@@ -253,7 +253,7 @@ const projects = [
 
     `,
     image: null,
-    technologies: ["OpenStack", "vCloud Director", "VMware Workstation", "vSphere", "Virtualisation", "Ubuntu Server", "KVM", "QEMU", "MySQL", "RabbitMQ", "Cinder", "Horizon", "Keystone", "Neutron", "Glance", "Nova"],
+    technologies: ["OpenStack", "vCloud Director", "VMware", "vSphere", "Virtualisation", "Linux", "KVM", "QEMU", "MySQL", "RabbitMQ"],
     category: "cloud",
   },
   {
