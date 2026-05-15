@@ -6,11 +6,11 @@ const projects = [
   {
     id: 1,
     title: "Modernisation Infrastructure",
-    description: "Modernisation et sécurisation de l'infrastructure réseau : pare-feu, stockage centralisé et optimisation des performances.",
+    description: "Modernisation et sécurisation de l'infra-structure réseau : pare-feu, stockage centralisé et optimisation des performances.",
     client: "Client : Viziocraft",
     details: `
       <h4>🎯 Contexte</h4>
-      <p>Projet de modernisation de l’infra-structure informatique visant à renforcer la sécurité du réseau, centraliser le stockage des données, améliorer les performances des équipements et fiabiliser l’ensemble du système d’information.</p>
+      <p>Projet de modernisation de l’infrastructure informatique visant à renforcer la sécurité du réseau, centraliser le stockage des données, améliorer les performances des équipements et fiabiliser l’ensemble du système d’information.</p>
 
       <h4>🔧 Réalisations</h4>
       <ul>
