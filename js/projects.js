@@ -5,7 +5,7 @@
 const projects = [
   {
     id: 1,
-    title: "🔒 Modernisation Infrastructure",
+    title: "Modernisation Infrastructure",
     description: "Modernisation et sécurisation de l'infrastructure réseau : pare-feu, stockage centralisé et optimisation des performances.",
     client: "Client : Viziocraft",
     details: `
@@ -26,7 +26,7 @@ const projects = [
 
     `,
     image: null,
-    technologies: ["FortiGate", "Synology NAS", "Firewall"],
+    technologies: ["FortiGate", "FortiAnalyzer", "Synology NAS", "Aruba Instant On", "Firewall", "LAN"],
     category: "securite",
     liveUrl: "#",
     githubUrl: "#",
@@ -34,7 +34,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "🌐 Refonte Infrastructure LAN",
+    title: "Refonte Infrastructure LAN",
     description: "Refonte complète du réseau local avec amélioration de la couverture Wi-Fi et gestion centralisée via Omada Cloud.",
     client: "Client : Investisseurs & Partenaires",
     details: `
@@ -64,8 +64,8 @@ const projects = [
     featured: true,
   },
   {
-    id: 4,
-    title: "📞 Migration du Système VoIP vers SIP Trunk Orange",
+    id: 3,
+    title: "Migration du Système VoIP vers SIP Trunk Orange",
     description: "Migration de l'infrastructure de téléphonie IP vers un nouveau trunk SIP Orange avec reconfiguration complète du système.",
     client: "Client : LPSA",
     details: `
@@ -94,8 +94,8 @@ const projects = [
     featured: false,
   },
   {
-    id: 6,
-    title: "📞 Rétablissement Appels Internationaux PNUD",
+    id: 4,
+    title: "Rétablissement Appels Internationaux PNUD",
     description: "Restauration des appels internationaux via l'opérateur YAS après interruption de la liaison VSAT.",
     client: "Client : PNUD",
     details: `
@@ -125,8 +125,35 @@ const projects = [
     featured: false,
   },
   {
-    id: 7,
-    title: "📱 Ligne Verte Ministère Éducation Nationale",
+    id: 5,
+    title: "SWAP Routeurs de Secours BMOI",
+    description: "Remplacement des routeurs de secours défaillants par de nouveaux équipements 4G avec VPN et basculement automatique.",
+    client: "Client : BMOI",
+    details: `
+      <h4>🎯 Contexte</h4>
+      <p>Remplacement des routeurs de secours défaillants par de nouveaux routeurs 4G afin de garantir la continuité des communications entre le siège et les succursales.</p>
+
+      <h4>🔧 Réalisations</h4>
+      <ul>
+        <li>Installation du routeur Cisco 4G</li>
+        <li>Configuration des interfaces WAN et LAN</li>
+        <li>Intégration des cartes SIM 4G</li>
+        <li>Mise en place de tunnels VPN vers les succursales</li>
+        <li>Configuration du basculement automatique (Failover)</li>
+        <li>Configuration du suivi de connectivité</li>
+        <li>Vérification de la stabilité du secours</li>
+      </ul>
+      `,
+    image: null,
+    technologies: ["Routing", "Cellular Gateway", "Failover", "IPsec"],
+    category: "reseaux",
+    liveUrl: "#",
+    githubUrl: "#",
+    featured: false,
+  },
+  {
+    id: 6,
+    title: "Ligne Verte Ministère Éducation Nationale",
     description: "Déploiement d'une plateforme call center pour la gestion de la ligne verte nationale avec PBX Yeastar.",
     client: "Client : Ministère de l'Éducation Nationale",
     details: `
@@ -156,35 +183,8 @@ const projects = [
     featured: true,
   },
   {
-    id: 8,
-    title: "🔄 SWAP Routeurs de Secours BMOI",
-    description: "Remplacement des routeurs de secours défaillants par de nouveaux équipements 4G avec VPN et basculement automatique.",
-    client: "Client : BMOI",
-    details: `
-      <h4>🎯 Contexte</h4>
-      <p>Remplacement des routeurs de secours défaillants par de nouveaux routeurs 4G afin de garantir la continuité des communications entre le siège et les succursales.</p>
-
-      <h4>🔧 Réalisations</h4>
-      <ul>
-        <li>Installation du routeur Cisco 4G</li>
-        <li>Configuration des interfaces WAN et LAN</li>
-        <li>Intégration des cartes SIM 4G</li>
-        <li>Mise en place de tunnels VPN vers les succursales</li>
-        <li>Configuration du basculement automatique (Failover)</li>
-        <li>Configuration du suivi de connectivité</li>
-        <li>Vérification de la stabilité du secours</li>
-      </ul>
-      `,
-    image: null,
-    technologies: ["Routing", "Cellular Gateway", "Failover", "IPsec"],
-    category: "reseaux",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-  },
-  {
-    id: 9,
-    title: "📡 Déploiement Routeurs à Fianarantsoa & Toliara",
+    id: 7,
+    title: "Déploiement des nouveaux routeurs",
     description: "Installation et configuration de routeurs DMVPN pour renforcer la connectivité inter-sites en régions.",
     client: "Client : LPSA",
     details: `
@@ -209,7 +209,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 10,
+    id: 8,
     title: "☁️ Cloud OpenStack — ESPA",
     description: "Conception et mise en place d'une infrastructure cloud privée complète basée sur OpenStack.",
     client: null,
