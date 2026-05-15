@@ -88,7 +88,6 @@ const projects = [
     id: 4,
     title: "DocGen Platform",
     description: "Plateforme d'ingénierie documentaire basée sur l'IA pour automatiser la génération de BOM, SOW, OT et rapports techniques.",
-    client: "Usage interne : NextHope",
     details: `
     <h4>🎯 Contexte</h4>
     <p>Plateforme développée en interne chez NextHope pour automatiser et accélérer la création de documents commerciaux et techniques (BOM, SOW, OT, IR). L'application combine l'intégration Gmail, l'analyse IA multi-modèle et une bibliothèque locale d'équipements afin de transformer les demandes clients en propositions complètes en quelques minutes.</p>
@@ -112,44 +111,13 @@ const projects = [
       <li>Tests fonctionnels et validation des résultats générés</li>
       <li>Optimisation des performances et de la fiabilité du système</li>
     </ul>
-
-    <h4>🛠️ Technologies</h4>
-    <p>Python, Flask, SQLite, Gmail API, Gemini AI, Groq API, OpenPyXL, Python-Docx, Pandas, HTML, CSS, JavaScript</p>
  `,
     image: null,
-    technologies: ["Python", "FastAPI", "React", "Gemini AI", "Groq", "SQLite", "Gmail API", "Pandas", "Python-Docx", "Docker"],
+    technologies: ["Python", "FastAPI", "React", "Gemini AI", "Groq", "SQLite", "Gmail API", "Pandas", "Python-Docx", "Javascript", "HTML/CSS", "Docker"],
     category: "dev",
   },
   {
     id: 5,
-    title: "Rétablissement Appels Internationaux PNUD",
-    description: "Restauration des appels internationaux via l'opérateur YAS après interruption de la liaison VSAT.",
-    client: "Client : PNUD",
-    details: `
-      <h4>🎯 Contexte</h4>
-      <p>Restauration de la possibilité d’effectuer des appels internationaux via l’opérateur YAS à la suite de l’interruption de la liaison VSAT principale.</p>
-
-      <h4>🔧 Réalisations</h4>
-      <ul>
-        <li>Analyse du plan de numérotation existant</li>
-        <li>Vérification de la configuration sur Cisco Call Manager</li>
-        <li>Identification des routes d’appels impactées</li>
-        <li>Analyse des Route Patterns</li>
-        <li>Analyse des CSS et Partitions</li>
-        <li>Reconfiguration des Route Patterns</li>
-        <li>Modification des Call Patterns</li>
-        <li>Redirection des appels vers YAS</li>
-        <li>Mise à jour des droits d’appels</li>
-        <li>Tests des appels internationaux et validation finale</li>
-      </ul>
-
-    `,
-    image: null,
-    technologies: ["Cisco CUCM", "SIP Trunk", "Dial Plan", "Route Plan", "Call international"],
-    category: "voip",
-  },
-  {
-    id: 6,
     title: "SWAP Routeurs de Secours BMOI",
     description: "Remplacement des routeurs de secours défaillants par de nouveaux équipements 4G avec VPN et basculement automatique.",
     client: "Client : BMOI",
@@ -173,7 +141,7 @@ const projects = [
     category: "reseaux",
   },
   {
-    id: 7,
+    id: 6,
     title: "Mise en place de la Ligne Verte",
     description: "Déploiement d'une plateforme call center pour la gestion de la ligne verte nationale avec PBX Yeastar.",
     client: "Client : Ministère de l'Éducation Nationale",
@@ -199,9 +167,34 @@ const projects = [
     image: null,
     technologies: ["Yeastar PBX", "Yealink IP Phone", "SIP Trunk", "Call Center", "Routing", "Auto Provisioning"],
     category: "voip",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: true,
+  },
+  {
+    id: 7,
+    title: "Rétablissement Appels Internationaux PNUD",
+    description: "Restauration des appels internationaux via l'opérateur YAS après interruption de la liaison VSAT.",
+    client: "Client : PNUD",
+    details: `
+      <h4>🎯 Contexte</h4>
+      <p>Restauration de la possibilité d’effectuer des appels internationaux via l’opérateur YAS à la suite de l’interruption de la liaison VSAT principale.</p>
+
+      <h4>🔧 Réalisations</h4>
+      <ul>
+        <li>Analyse du plan de numérotation existant</li>
+        <li>Vérification de la configuration sur Cisco Call Manager</li>
+        <li>Identification des routes d’appels impactées</li>
+        <li>Analyse des Route Patterns</li>
+        <li>Analyse des CSS et Partitions</li>
+        <li>Reconfiguration des Route Patterns</li>
+        <li>Modification des Call Patterns</li>
+        <li>Redirection des appels vers YAS</li>
+        <li>Mise à jour des droits d’appels</li>
+        <li>Tests des appels internationaux et validation finale</li>
+      </ul>
+
+    `,
+    image: null,
+    technologies: ["Cisco CUCM", "SIP Trunk", "Dial Plan", "Route Plan", "Call international"],
+    category: "voip",
   },
   {
     id: 8,
