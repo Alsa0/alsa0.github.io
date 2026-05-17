@@ -92,9 +92,9 @@ function renderProjects(filter) {
       cloud: "☁️",
       securite: "🔒",
       voip: "📞",
-      dev: "📟",
+      dev: "⌨️",
     };
-    const icon = icons[project.category] || "📟";
+    const icon = icons[project.category] || "⌨️";
 
     const imageHTML = project.image
       ? `<img src="${project.image}" alt="${project.title}" />`
