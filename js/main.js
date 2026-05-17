@@ -92,9 +92,9 @@ function renderProjects(filter) {
       cloud: "☁️",
       securite: "🔒",
       voip: "📞",
-      dev: "💻",
+      dev: "</>",
     };
-    const icon = icons[project.category] || "💻";
+    const icon = icons[project.category] || "</>";
 
     const imageHTML = project.image
       ? `<img src="${project.image}" alt="${project.title}" />`
@@ -228,7 +228,7 @@ function initProjectModal() {
 
 function openModal(project) {
   const modal = document.getElementById('project-modal');
-  const icons = { reseaux: '🌐', cloud: '☁️', securite: '🔒', voip: '📞', dev: '</>' };
+  const icons = { reseaux: '🌐', cloud: '☁️', securite: '🔒', voip: '📞', dev: '💻' };
 
   modal.querySelector('.modal-icon').textContent = icons[project.category] || '💻';
   modal.querySelector('.modal-title').textContent = project.title;
