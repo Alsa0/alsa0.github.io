@@ -343,5 +343,5 @@ const categories = [
   { key: "cloud", label: "☁️ Cloud" },
   { key: "securite", label: "🔒 Sécurité" },
   { key: "voip", label: "📞 VoIP" },
-  { key: "dev", label: "💻 Dev" },
+  { key: "dev", label: "</> Dev" },
 ];
