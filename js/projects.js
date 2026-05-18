@@ -257,6 +257,34 @@ const projects = [
     category: "cloud",
   },
   {
+    id: 15,
+    title: "Système IDS — Université d'Antsiranana",
+    description: "Mise en place d'un système de détection d'intrusion basé sur Snort pour sécuriser le réseau de l'Université d'Antsiranana.",
+    client: null,
+    details: `
+      <h4>🎯 Contexte</h4>
+      <p>Déploiement d'un système de détection d'intrusion (IDS) au sein du réseau de l'Université d'Antsiranana afin de surveiller le trafic réseau, détecter les activités malveillantes et renforcer la posture de sécurité de l'établissement.</p>
+
+      <h4>🔧 Réalisations</h4>
+      <ul>
+        <li>Audit et analyse de l'infrastructure réseau existante de l'université</li>
+        <li>Installation et configuration de Snort IDS sur serveur Linux</li>
+        <li>Configuration des règles Snort pour la détection des attaques courantes</li>
+        <li>Mise en place du mode NIDS (Network Intrusion Detection System)</li>
+        <li>Configuration de la capture et analyse de paquets avec Wireshark et tcpdump</li>
+        <li>Configuration des notifications email en temps réel vers les administrateurs via Sendmail/SMTP</li>
+        <li>Intégration des alertes WhatsApp via API (CallMeBot) pour notification instantanée sur mobile</li>
+        <li>Tests de validation avec des scénarios d'attaques simulées</li>
+      </ul>
+    `,
+    image: null,
+    technologies: [
+      "Snort IDS", "Linux Server", "Wireshark", "tcpdump",
+      "SMTP", "Sendmail", "WhatsApp API", "NIDS"
+    ],
+    category: "securite",
+  },
+  {
     id: 10,
     title: "📡 Réseau WiMAX — CIR DIANA",
     description: "Configuration et optimisation de réseaux WiMAX avec déploiement Ubiquiti et études de liaison radio.",
@@ -313,11 +341,11 @@ const projects = [
   {
     id: 14,
     title: "ETO-Parking Diego Suarez",
-    description: "Application Android de localisation et réservation de parkings en temps réel dans la ville de Diego Suarez, avec intégration cartographique et détection des places libres.",
+    description: "Application Android de localisation et réservation de parkings dans la ville de Diego Suarez, avec intégration cartographique et détection des places libres.",
     client: null,
     details: `
     <h4>🎯 Contexte</h4>
-    <p>Développement d'une application Android permettant aux conducteurs de localiser et réserver des places de parking disponibles en temps réel dans la ville de Diego Suarez. L'application intègre une carte interactive et un système de détection automatique des parkings libres.</p>
+    <p>Développement d'une application Android permettant aux conducteurs de localiser et réserver des places de parking disponibles dans la ville de Diego Suarez. L'application intègre une carte interactive et un système de détection automatique des parkings libres.</p>
 
     <h4>🔧 Réalisations</h4>
     <ul>
