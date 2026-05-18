@@ -91,7 +91,7 @@ function renderProjects(filter) {
       reseaux: '<i class="fa-solid fa-sitemap" style="color:#38bdf8; font-size:3rem;"></i>',
       cloud: '<i class="fa-solid fa-cloud" style="color:#818cf8; font-size:3rem;"></i>',
       securite: '<i class="fa-solid fa-shield-halved" style="color:#f97316; font-size:3rem;"></i>',
-      voip: '<i class="fa-solid fa-headset" style="color:#f43f5e; font-size:3rem;"></i>',
+      voip: '<i class="fa-solid fa-phone" style="color:#f43f5e; font-size:3rem;"></i>',
       dev: '<i class="fa-solid fa-code" style="color:#00ffb3; font-size:3rem;"></i>',
     };
     const icon = icons[project.category] || "<i class='fa-solid fa-phone'></i>";
@@ -229,7 +229,7 @@ function initProjectModal() {
 function openModal(project) {
   const modal = document.getElementById('project-modal');
   const icons = {
-    reseaux: '<i class="fa-solid fa-network-wired" style="color:#38bdf8"></i>',
+    reseaux: '<i class="fa-solid fa-sitemap" style="color:#38bdf8"></i>',
     cloud: '<i class="fa-solid fa-cloud" style="color:#818cf8"></i>',
     securite: '<i class="fa-solid fa-shield-halved" style="color:#f97316"></i>',
     voip: '<i class="fa-solid fa-phone" style="color:#f43f5e"></i>',
