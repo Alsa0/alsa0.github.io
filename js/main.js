@@ -88,11 +88,11 @@ function renderProjects(filter) {
     card.style.transitionDelay = index * 0.1 + "s";
 
     const icons = {
-      reseaux: "<i class='fa-solid fa-network-wired'></i>",
-      cloud: "<i class='fa-solid fa-cloud'></i>",
-      securite: "<i class='fa-solid fa-lock'></i>",
-      voip: "<i class='fa-solid fa-phone'></i>",
-      dev: "<i class='fa-solid fa-code'></i>",
+      reseaux: '<i class="fa-solid fa-network-wired" style="color:#38bdf8; font-size:3rem;"></i>',
+      cloud: '<i class="fa-solid fa-cloud" style="color:#818cf8; font-size:3rem;"></i>',
+      securite: '<i class="fa-solid fa-shield-halved" style="color:#f97316; font-size:3rem;"></i>',
+      voip: '<i class="fa-solid fa-phone" style="color:#f43f5e; font-size:3rem;"></i>',
+      dev: '<i class="fa-solid fa-code" style="color:#00ffb3; font-size:3rem;"></i>',
     };
     const icon = icons[project.category] || "<i class='fa-solid fa-phone'></i>";
 
@@ -228,7 +228,7 @@ function initProjectModal() {
 
 function openModal(project) {
   const modal = document.getElementById('project-modal');
-  const icons = { reseaux: '🌐', cloud: '☁️', securite: '🔒', voip: '📞', dev: '<i class="fa-solid fa-code"></i>' };
+  const icons = { reseaux: '🌐', cloud: '☁️', securite: '🔒', voip: '📞', dev: '<i class="fa-solid fa-code" style="color:#22c55e"></i>' };
 
   modal.querySelector('.modal-icon').innerHTML = icons[project.category] || '<i class="fa-solid fa-code"></i>';
   modal.querySelector('.modal-title').textContent = project.title;
