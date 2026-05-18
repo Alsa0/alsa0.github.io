@@ -342,6 +342,6 @@ const categories = [
   { key: "reseaux", label: "<i class='fa-solid fa-network-wired' style='color:#38bdf8'></i> Réseaux" },
   { key: "cloud", label: "<i class='fa-solid fa-cloud' style='color:#818cf8'></i> Cloud" },
   { key: "securite", label: "<i class='fa-solid fa-lock' style='color:#f97316'></i> Sécurité" },
-  { key: "voip", label: "<i class='fa-solid fa-phone' style='color:#22c55e'></i> VoIP" },
+  { key: "voip", label: "<i class='fa-solid fa-phone' style='color:#f43f5e'></i> VoIP" },
   { key: "dev", label: "<i class='fa-solid fa-code' style='color:#00ffb3'></i> Dev" },
 ];
