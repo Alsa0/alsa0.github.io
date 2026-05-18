@@ -338,8 +338,41 @@ const projects = [
     category: "reseaux",
   },
   {
+    id: 16,
+    title: "</> App Web de Scolarité - IST-D",
+    description: "Application web de génération automatique de relevés de notes selon le système LMD pour l'IST-D.",
+    client: null,
+    details: `
+    <h4>🎯 Contexte</h4>
+    <p>Conception et développement d'une application web de gestion de la scolarité pour l'Institut Supérieur de Technologie d'Antsiranana (IST-D). L'objectif était de moderniser et automatiser la gestion des notes des étudiants selon le système LMD, en remplaçant les processus manuels par une solution numérique fiable et centralisée.</p>
+
+    <h4>🔧 Réalisations</h4>
+    <ul>
+      <li>Conception de la base de données pour le stockage des notes et des étudiants</li>
+      <li>Modélisation UML : diagrammes de cas d'utilisation, de classes et de séquences</li>
+      <li>Développement du backend</li>
+      <li>Conception et développement de l'interface utilisateur</li>
+      <li>Mise en place du système de gestion des utilisateurs : Admin, Enseignant, Étudiant</li>
+      <li>Développement du module de saisie des notes par matière et par semestre</li>
+      <li>Implémentation du calcul automatique des moyennes et mentions</li>
+      <li>Génération automatique des relevés de notes en PDF</li>
+      <li>Développement du module de gestion des UE (Unités d'Enseignement)</li>
+      <li>Mise en place des règles de validation et compensation selon le système LMD</li>
+      <li>Stockage sécurisé des données dans une base MySQL</li>
+      <li>Tests et validation avec les données réelles de l'établissement</li>
+    </ul>
+
+  `,
+    image: null,
+    technologies: [
+      "PHP", "HTML", "CSS", "JavaScript",
+      "MySQL", "Bootstrap", "Apache"
+    ],
+    category: "dev",
+  },
+  {
     id: 12,
-    title: "🌐 App Web État Civil",
+    title: "App Web État Civil",
     description: "Développement d'une application web de remontée des statistiques d'état civil pour le Ministère de l'Intérieur.",
     client: null,
     details: `
