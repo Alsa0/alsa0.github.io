@@ -257,8 +257,33 @@ const projects = [
     category: "cloud",
   },
   {
+    id: 14,
+    title: "ETO-Parking Diego Suarez",
+    description: "Application Android de localisation et réservation de parkings dans la ville de Diego Suarez, avec intégration cartographique et détection des places libres.",
+    client: null,
+    details: `
+    <h4>🎯 Contexte</h4>
+    <p>Développement d'une application Android permettant aux conducteurs de localiser et réserver des places de parking disponibles dans la ville de Diego Suarez. L'application intègre une carte interactive et un système de détection automatique des parkings libres.</p>
+
+    <h4>🔧 Réalisations</h4>
+    <ul>
+      <li>Développement de l'application mobile sous Android Studio</li>
+      <li>Intégration de Google Maps SDK pour la cartographie interactive</li>
+      <li>Affichage en temps réel des parkings disponibles sur la carte</li>
+      <li>Système de réservation de place avec confirmation</li>
+      <li>Détection automatique des places libres et occupées</li>
+      <li>Géolocalisation de l'utilisateur et navigation vers le parking</li>
+      <li>Interface utilisateur intuitive et responsive</li>
+      <li>Backend API pour la gestion des données de parking</li>
+    </ul>
+    `,
+    image: null,
+    technologies: ["Android Studio", "Java", "Google Maps SDK", "Firebase", "REST API", "GPS", "SQLite"],
+    category: "dev",
+  },
+  {
     id: 15,
-    title: "Système IDS — Université d'Antsiranana",
+    title: "Système IDS — UNA",
     description: "Mise en place d'un système de détection d'intrusion basé sur Snort pour sécuriser le réseau de l'Université d'Antsiranana.",
     client: null,
     details: `
@@ -279,8 +304,8 @@ const projects = [
     `,
     image: null,
     technologies: [
-      "Snort IDS", "Linux Server", "Wireshark", "tcpdump",
-      "SMTP", "Sendmail", "WhatsApp API", "NIDS"
+      "Snort IDS", "Linux Server", "NIDS", "Wireshark", "tcpdump",
+      "SMTP", "Sendmail", "WhatsApp API"
     ],
     category: "securite",
   },
@@ -333,34 +358,6 @@ const projects = [
     `,
     image: null,
     technologies: ["PHP", "HTML", "CSS", "MySQL"],
-    category: "dev",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
-  },
-  {
-    id: 14,
-    title: "ETO-Parking Diego Suarez",
-    description: "Application Android de localisation et réservation de parkings dans la ville de Diego Suarez, avec intégration cartographique et détection des places libres.",
-    client: null,
-    details: `
-    <h4>🎯 Contexte</h4>
-    <p>Développement d'une application Android permettant aux conducteurs de localiser et réserver des places de parking disponibles dans la ville de Diego Suarez. L'application intègre une carte interactive et un système de détection automatique des parkings libres.</p>
-
-    <h4>🔧 Réalisations</h4>
-    <ul>
-      <li>Développement de l'application mobile sous Android Studio</li>
-      <li>Intégration de Google Maps SDK pour la cartographie interactive</li>
-      <li>Affichage en temps réel des parkings disponibles sur la carte</li>
-      <li>Système de réservation de place avec confirmation</li>
-      <li>Détection automatique des places libres et occupées</li>
-      <li>Géolocalisation de l'utilisateur et navigation vers le parking</li>
-      <li>Interface utilisateur intuitive et responsive</li>
-      <li>Backend API pour la gestion des données de parking</li>
-    </ul>
-    `,
-    image: null,
-    technologies: ["Android Studio", "Java", "Google Maps SDK", "Firebase", "REST API", "GPS", "SQLite"],
     category: "dev",
   },
 ];
