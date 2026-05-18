@@ -311,7 +311,7 @@ const projects = [
   },
   {
     id: 10,
-    title: "📡 Migration Réseau WiMAX vers Ubiquiti — SRB DIANA",
+    title: "Migration Réseau WiMAX vers Ubiquiti — SRB DIANA",
     description: "Étude et migration de l'ancien réseau WiMAX vers une solution Ubiquiti moderne pour améliorer l'interconnexion des services financiers de la région DIANA.",
     client: null,
     details: `
@@ -333,8 +333,7 @@ const projects = [
   `,
     image: null,
     technologies: [
-      "WiMAX", "Ubiquiti AirFiber", "AirOS",
-      "PtP", "PtMP", "Radio Fréquence",
+      "WiMAX", "Ubiquiti AirFiber", "PtP", "PtMP", "Radio Fréquence",
       "Zone de Fresnel", "LAN/WAN"
     ],
     category: "reseaux",
