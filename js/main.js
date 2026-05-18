@@ -230,7 +230,7 @@ function openModal(project) {
   const modal = document.getElementById('project-modal');
   const icons = { reseaux: '🌐', cloud: '☁️', securite: '🔒', voip: '📞', dev: '<i class="fa-solid fa-code"></i>' };
 
-  modal.querySelector('.modal-icon').textContent = icons[project.category] || '<i class="fa-solid fa-code"></i>';
+  modal.querySelector('.modal-icon').innerHTML = icons[project.category] || '<i class="fa-solid fa-code"></i>';
   modal.querySelector('.modal-title').textContent = project.title;
   modal.querySelector('.modal-category').textContent = project.category.toUpperCase();
   modal.querySelector('.modal-desc').innerHTML = project.details || project.description;
