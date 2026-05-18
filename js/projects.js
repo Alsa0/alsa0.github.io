@@ -221,7 +221,7 @@ const projects = [
   },
   {
     id: 9,
-    title: "Cloud privé OpenStack - ESPA",
+    title: "Cloud privé OpenStack — ESPA",
     description: "Conception et mise en place d'une infra-structure cloud privée complète basée sur OpenStack.",
     client: null,
     details: `
@@ -339,8 +339,8 @@ const projects = [
   },
   {
     id: 16,
-    title: "</> App Web de Scolarité - IST-D",
-    description: "Application web de génération automatique de relevés de notes selon le système LMD pour l'IST-D.",
+    title: "App Web de Scolarité — IST-D",
+    description: "Application web de génération automatique de relevés de notes selon le système LMD pour l'Institut Supérieur de Technologie d'Antsiranana.",
     client: null,
     details: `
     <h4>🎯 Contexte</h4>
@@ -369,6 +369,37 @@ const projects = [
       "MySQL", "Bootstrap", "Apache"
     ],
     category: "dev",
+  },
+  {
+    id: 17,
+    title: "Système VoIP & IM — MEF",
+    description: "Mise en place d'un système VoIP et messagerie instantanée interconnectant les départements Finance, Économie et Budget du Ministère de l'Économie et des Finances.",
+    client: null,
+    details: `
+    <h4>🎯 Contexte</h4>
+    <p>Stage réalisé à la DSI du Ministère de l'Économie et des Finances. L'objectif était de moderniser les communications internes en déployant un système de téléphonie IP et de messagerie instantanée pour interconnecter les différents départements : Finance, Économie et Budget, afin de réduire les coûts de communication et améliorer la collaboration inter-départements.</p>
+
+    <h4>🔧 Réalisations</h4>
+    <ul>
+      <li>Analyse des besoins en communication des différents départements</li>
+      <li>Installation et configuration du serveur Asterisk sur Linux</li>
+      <li>Configuration du plan de numérotation inter-départements</li>
+      <li>Mise en place des extensions internes pour chaque utilisateur</li>
+      <li>Configuration du protocole SIP pour les appels internes au sein de chaque bâtiment</li>
+      <li>Configuration du protocole IAX2 pour les appels inter-bâtiments entre le département Finance et le département Économie & Budget</li>
+      <li>Mise en place des trunks IAX2 entre les deux serveurs Asterisk des bâtiments</li>
+      <li>Déploiement et configuration des softphones sur les postes utilisateurs</li>
+      <li>Mise en place de la messagerie instantanée via XMPP/Openfire</li>
+      <li>Mise en place de la messagerie vocale (Voicemail)</li>
+      <li>Tests de communication entre les départements Finance, Économie et Budget</li>
+      <li>Formation des utilisateurs à l'utilisation du softphone et de la messagerie</li>
+    </ul>
+`,
+    image: null,
+    technologies: [
+      "Asterisk", "SIP", "IAX2", "Linux Server", "Zoiper", "Jitsi", "XMPP", "Openfire"
+    ],
+    category: "voip",
   },
   {
     id: 12,
