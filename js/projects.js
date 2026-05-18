@@ -339,9 +339,9 @@ const projects = [
 
 const categories = [
   { key: "all", label: "🔥 Tous" },
-  { key: "reseaux", label: "🌐 Réseaux" },
-  { key: "cloud", label: "☁️ Cloud" },
-  { key: "securite", label: "🔒 Sécurité" },
-  { key: "voip", label: "📞 VoIP" },
-  { key: "dev", label: "</> Dev" },
+  { key: "reseaux", label: "<i class='fa-solid fa-network-wired'></i> Réseaux" },
+  { key: "cloud", label: "<i class='fa-solid fa-cloud'></i> Cloud" },
+  { key: "securite", label: "<i class='fa-solid fa-lock'></i> Sécurité" },
+  { key: "voip", label: "<i class='fa-solid fa-phone'></i> VoIP" },
+  { key: "dev", label: "<i class='fa-solid fa-code'></i> Dev" },
 ];
