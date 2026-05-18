@@ -333,8 +333,7 @@ const projects = [
   `,
     image: null,
     technologies: [
-      "WiMAX", "Ubiquiti AirFiber", "PtP", "PtMP", "Radio Fréquence",
-      "Zone de Fresnel", "LAN/WAN"
+      "WiMAX", "Ubiquiti AirFiber", "PtP", "PtMP", "RF", "Fresnel zones", "LAN/WAN"
     ],
     category: "reseaux",
   },
