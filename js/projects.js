@@ -304,8 +304,8 @@ const projects = [
     `,
     image: null,
     technologies: [
-      "Snort IDS", "Linux Server", "NIDS", "Wireshark", "tcpdump",
-      "SMTP", "Sendmail", "WhatsApp API"
+      "Snort IDS", "Linux Server", "NIDS", "Apache", "MySQL",
+      "Wireshark", "tcpdump", "SMTP", "Sendmail", "WhatsApp API"
     ],
     category: "securite",
   },
