@@ -257,7 +257,7 @@ const projects = [
     category: "cloud",
   },
   {
-    id: 14,
+    id: 10,
     title: "ETO-Parking Diego Suarez",
     description: "Application Android de localisation et réservation de parkings dans la ville de Diego Suarez, avec intégration cartographique et détection des places libres.",
     client: null,
@@ -282,7 +282,7 @@ const projects = [
     category: "dev",
   },
   {
-    id: 15,
+    id: 11,
     title: "Système IDS — UNA",
     description: "Mise en place d'un système de détection d'intrusion basé sur Snort pour sécuriser le réseau de l'Université d'Antsiranana.",
     client: null,
@@ -310,7 +310,7 @@ const projects = [
     category: "securite",
   },
   {
-    id: 10,
+    id: 12,
     title: "Migration Réseau WiMAX vers Ubiquiti — SRB DIANA",
     description: "Étude et migration de l'ancien réseau WiMAX vers une solution Ubiquiti moderne pour améliorer l'interconnexion des services financiers de la région DIANA.",
     client: null,
@@ -338,7 +338,7 @@ const projects = [
     category: "reseaux",
   },
   {
-    id: 16,
+    id: 13,
     title: "App Web de Scolarité — IST-D",
     description: "Application web de génération automatique de relevés de notes selon le système LMD pour l'Institut Supérieur de Technologie d'Antsiranana.",
     client: null,
@@ -371,7 +371,7 @@ const projects = [
     category: "dev",
   },
   {
-    id: 17,
+    id: 14,
     title: "Système VoIP & IM — MEF",
     description: "Mise en place d'un système VoIP et messagerie instantanée interconnectant les départements Finance, Économie et Budget du Ministère de l'Économie et des Finances.",
     client: null,
@@ -402,7 +402,7 @@ const projects = [
     category: "voip",
   },
   {
-    id: 12,
+    id: 15,
     title: "App Web État Civil",
     description: "Développement d'une application web de remontée des statistiques d'état civil pour le Ministère de l'Intérieur.",
     client: null,
