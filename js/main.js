@@ -88,13 +88,13 @@ function renderProjects(filter) {
     card.style.transitionDelay = index * 0.1 + "s";
 
     const icons = {
-      reseaux: "🌐",
-      cloud: "☁️",
-      securite: "🔒",
-      voip: "📞",
+      reseaux: "<i class='fa-solid fa-network-wired'></i>",
+      cloud: "<i class='fa-solid fa-cloud'></i>",
+      securite: "<i class='fa-solid fa-lock'></i>",
+      voip: "<i class='fa-solid fa-phone'></i>",
       dev: "<i class='fa-solid fa-code'></i>",
     };
-    const icon = icons[project.category] || "📞";
+    const icon = icons[project.category] || "<i class='fa-solid fa-phone'></i>";
 
     const imageHTML = project.image
       ? `<img src="${project.image}" alt="${project.title}" />`
@@ -228,9 +228,9 @@ function initProjectModal() {
 
 function openModal(project) {
   const modal = document.getElementById('project-modal');
-  const icons = { reseaux: '🌐', cloud: '☁️', securite: '🔒', voip: '📞', dev: '💻' };
+  const icons = { reseaux: '🌐', cloud: '☁️', securite: '🔒', voip: '📞', dev: '<i class="fa-solid fa-code"></i>' };
 
-  modal.querySelector('.modal-icon').textContent = icons[project.category] || '💻';
+  modal.querySelector('.modal-icon').textContent = icons[project.category] || '<i class="fa-solid fa-code"></i>';
   modal.querySelector('.modal-title').textContent = project.title;
   modal.querySelector('.modal-category').textContent = project.category.toUpperCase();
   modal.querySelector('.modal-desc').innerHTML = project.details || project.description;
