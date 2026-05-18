@@ -304,38 +304,40 @@ const projects = [
     `,
     image: null,
     technologies: [
-      "Snort IDS", "Linux Server", "NIDS", "Apache", "MySQL",
-      "Wireshark", "tcpdump", "SMTP", "Sendmail", "WhatsApp API"
+      "Snort IDS", "Linux Server", "WhatsApp API", "SMTP", "Sendmail",
+      "NIDS", "Apache", "MySQL", "Wireshark", "Nmap"
     ],
     category: "securite",
   },
   {
     id: 10,
-    title: "📡 Réseau WiMAX — CIR DIANA",
-    description: "Configuration et optimisation de réseaux WiMAX avec déploiement Ubiquiti et études de liaison radio.",
+    title: "📡 Migration Réseau WiMAX vers Ubiquiti — SRB DIANA",
+    description: "Étude et migration de l'ancien réseau WiMAX vers une solution Ubiquiti moderne pour améliorer l'interconnexion des services financiers de la région DIANA.",
     client: null,
     details: `
-      <h4>🎯 Contexte</h4>
-      <p>Stage à la CIR du Service Régional de Budget DIANA (Septembre – Décembre 2022). Déploiement et optimisation d'un réseau WiMAX.</p>
+    <h4>🎯 Contexte</h4>
+    <p>Stage réalisé au CIR du Service Régional de Budget de la région DIANA. Le CIR assure la gestion du système d'information des services financiers de la région. L'infrastructure réseau existante reposait sur une technologie WiMAX vieillissante, devenue insuffisante pour assurer une connectivité fiable entre le Ministère de l'Économie et des Finances à Antananarivo et les services financiers déconcentrés de la région DIANA : Trésorerie Régionale, Douane, Direction Régionale du Budget et autres services financiers. L'objectif était d'étudier la faisabilité d'une migration vers une solution Ubiquiti plus moderne et performante.</p>
 
-      <h4>🔧 Réalisations</h4>
-      <ul>
-        <li>Configuration des équipements WiMAX</li>
-        <li>Déploiement des antennes Ubiquiti</li>
-        <li>Étude de liaison radio et calcul de zone de Fresnel</li>
-        <li>Conception du réseau intranet régional</li>
-        <li>Optimisation de la couverture radio</li>
-      </ul>
+    <h4>🔧 Réalisations</h4>
+    <ul>
+      <li>Audit complet de l'infrastructure réseau WiMAX existante et identification des limites</li>
+      <li>Analyse des besoins d'interconnexion entre le Ministère des Finances (Antananarivo) et les services régionaux</li>
+      <li>Étude de faisabilité pour la migration vers la solution Ubiquiti</li>
+      <li>Étude de propagation radio et calcul des zones de Fresnel entre les sites</li>
+      <li>Réalisation du bilan de liaison radio pour chaque connexion inter-sites</li>
+      <li>Sélection et dimensionnement des équipements Ubiquiti (AirFiber, NanoBeam, LiteBeam)</li>
+      <li>Proposition d'architecture réseau Point-à-Point (PtP) et Point-à-Multipoint (PtMP)</li>
+      <li>Élaboration du plan de migration et du budget prévisionnel</li>
+    </ul>
 
-      <h4>📈 Résultats</h4>
-      <p>Couverture réseau améliorée sur la région DIANA avec une connectivité stable.</p>
-    `,
+  `,
     image: null,
-    technologies: ["WiMAX", "Ubiquiti", "Radio", "LAN/WAN", "Fresnel"],
+    technologies: [
+      "WiMAX", "Ubiquiti AirFiber", "AirOS",
+      "PtP", "PtMP", "Radio Fréquence",
+      "Zone de Fresnel", "LAN/WAN"
+    ],
     category: "reseaux",
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false,
   },
   {
     id: 12,
