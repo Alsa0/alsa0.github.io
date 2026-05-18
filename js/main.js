@@ -141,7 +141,7 @@ function initFilters() {
   categories.forEach((cat) => {
     const btn = document.createElement("button");
     btn.className = "filter-btn" + (cat.key === "all" ? " active" : "");
-    btn.textContent = cat.label;
+    btn.innerHTML = cat.label;
     btn.dataset.filter = cat.key;
     btn.addEventListener("click", () => {
       bar.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
