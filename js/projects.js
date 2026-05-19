@@ -403,25 +403,30 @@ const projects = [
   },
   {
     id: 15,
-    title: "App Web État Civil",
-    description: "Développement d'une application web de remontée des statistiques d'état civil pour le Ministère de l'Intérieur.",
+    title: "App Web État Civil — MID",
+    description: "Développement d'une application web pour faciliter la remontée des statistiques d'état civil par commune pour le Ministère de l'Intérieur et de la Décentralisation.",
     client: null,
     details: `
-      <h4>🎯 Contexte</h4>
-      <p>Stage à la DSI du Ministère de l'Intérieur et de la Décentralisation (Août – Novembre 2018). Développement d'une application de gestion des statistiques d'état civil.</p>
+    <h4>🎯 Contexte</h4>
+    <p>Stage réalisé à la DSI du Ministère de l'Intérieur et de la Décentralisation. L'objectif était de développer une application web permettant la remontée des statistiques d'état civil (naissances, décès, mariages) depuis les communes vers le ministère, en remplaçant les processus manuels et papier par une solution numérique centralisée.</p>
 
-      <h4>🔧 Réalisations</h4>
-      <ul>
-        <li>Développement du backend en PHP</li>
-        <li>Conception de la base de données MySQL</li>
-        <li>Interface utilisateur en HTML/CSS</li>
-        <li>Système de remontée des statistiques par commune</li>
-        <li>Formation des utilisateurs et documentation</li>
-      </ul>
-
-    `,
+    <h4>🔧 Réalisations</h4>
+    <ul>
+      <li>Etude des processus existants de remontée des statistiques</li>
+      <li>Conception et modélisation de la base de données MySQL</li>
+      <li>Développement du backend en PHP</li>
+      <li>Conception de l'interface utilisateur</li>
+      <li>Mise en place du système de gestion des utilisateurs par rôle : Admin, Agent Commune, Superviseur</li>
+      <li>Développement du module de saisie des statistiques par commune</li>
+      <li>Développement du module de remontée et consolidation des données vers le ministère</li>
+      <li>Mise en place des tableaux de bord et rapports statistiques</li>
+      <li>Sécurisation des accès et authentification des utilisateurs</li>
+    </ul>
+  `,
     image: null,
-    technologies: ["PHP", "HTML", "CSS", "MySQL"],
+    technologies: [
+      "PHP", "HTML", "CSS", "JavaScript", "MySQL", "Bootstrap", "Apache"
+    ],
     category: "dev",
   },
 ];

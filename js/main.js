@@ -182,8 +182,11 @@ function initScrollTop() {
   });
 }
 
-// --- CONTACT FORM ---
+// --- CONTACT FORM (EmailJS) ---
 function initContactForm() {
+  // Initialiser EmailJS avec la Public Key
+  emailjs.init("XJpOx8yQaapPlU2Yv");
+
   const form = document.getElementById("contact-form");
   if (!form) return;
 
@@ -191,13 +194,47 @@ function initContactForm() {
     e.preventDefault();
     const btn = form.querySelector(".form-submit");
     const original = btn.textContent;
-    btn.textContent = "✓ Message envoye !";
-    btn.style.background = "linear-gradient(135deg, #22c55e, #16a34a)";
-    setTimeout(() => {
-      btn.textContent = original;
-      btn.style.background = "";
-      form.reset();
-    }, 2500);
+
+    // Désactiver le bouton pendant l'envoi
+    btn.textContent = "⏳ Envoi en cours...";
+    btn.disabled = true;
+    btn.style.opacity = "0.7";
+
+    // Préparer les données du template
+    const templateParams = {
+      name: form.querySelector("#name").value,
+      email: form.querySelector("#email").value,
+      message: form.querySelector("#message").value,
+      time: new Date().toLocaleString("fr-FR", {
+        dateStyle: "full",
+        timeStyle: "short",
+      }),
+    };
+
+    // Envoyer l'email via EmailJS
+    emailjs.send("service_alsa", "template_alsa", templateParams)
+      .then(() => {
+        btn.textContent = "✓ Message envoyé !";
+        btn.style.background = "linear-gradient(135deg, #22c55e, #16a34a)";
+        btn.style.opacity = "1";
+        setTimeout(() => {
+          btn.textContent = original;
+          btn.style.background = "";
+          btn.disabled = false;
+          form.reset();
+        }, 3000);
+      })
+      .catch((error) => {
+        console.error("EmailJS error:", error);
+        btn.textContent = "✕ Erreur, réessayez";
+        btn.style.background = "linear-gradient(135deg, #ef4444, #dc2626)";
+        btn.style.opacity = "1";
+        setTimeout(() => {
+          btn.textContent = original;
+          btn.style.background = "";
+          btn.disabled = false;
+        }, 3000);
+      });
   });
 }
 
