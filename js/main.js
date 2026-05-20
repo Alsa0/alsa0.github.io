@@ -201,13 +201,10 @@ function initContactForm() {
     btn.style.opacity = "0.7";
 
     // Préparer les données du template
-    const senderName = form.querySelector("#name").value;
-
     const templateParams = {
-      from_name: senderName,
+      from_name: form.querySelector("#name").value,
       from_email: form.querySelector("#email").value,
       message: form.querySelector("#message").value,
-      initial: senderName.charAt(0).toUpperCase(), // ← première lettre en majuscule
       time: new Date().toLocaleString("fr-FR", {
         dateStyle: "full",
         timeStyle: "short",
