@@ -202,8 +202,8 @@ function initContactForm() {
 
     // Préparer les données du template
     const templateParams = {
-      name: form.querySelector("#name").value,
-      email: form.querySelector("#email").value,
+      from_name: form.querySelector("#name").value,
+      from_email: form.querySelector("#email").value,
       message: form.querySelector("#message").value,
       time: new Date().toLocaleString("fr-FR", {
         dateStyle: "full",
