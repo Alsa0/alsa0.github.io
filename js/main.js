@@ -205,6 +205,7 @@ function initContactForm() {
       from_name: form.querySelector("#name").value,
       from_email: form.querySelector("#email").value,
       message: form.querySelector("#message").value,
+      initial: senderName.charAt(0).toUpperCase(),
       time: new Date().toLocaleString("fr-FR", {
         dateStyle: "full",
         timeStyle: "short",
