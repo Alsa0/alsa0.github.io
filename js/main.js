@@ -104,10 +104,6 @@ function renderProjects(filter) {
       <div class="project-image">
         ${project.featured ? '<span class="project-featured">★ Featured</span>' : ""}
         ${imageHTML}
-        <div class="project-overlay">
-          <a href="${project.liveUrl}" target="_blank" title="Voir le site">🔗</a>
-          <a href="${project.githubUrl}" target="_blank" title="Code source">💻</a>
-        </div>
       </div>
       <div class="project-body">
         <h3>${project.title}</h3>
