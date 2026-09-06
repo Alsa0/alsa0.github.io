@@ -1,7 +1,4 @@
-// ============================================
-// PROJETS — Basés sur le CV d'Aurélien
-// Modifiez ce fichier pour ajouter vos projets !
-// ============================================
+
 const projects = [
   {
     id: 1,

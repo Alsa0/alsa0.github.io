@@ -45,7 +45,7 @@ let frame = 0;
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Fils
+
     for (let i = 0; i < nodes.length; i++) {
         for (const j of nodes[i].connections) {
             if (j > i) {
@@ -59,7 +59,7 @@ function draw() {
         }
     }
 
-    // Pulses électriques
+
     for (let i = pulses.length - 1; i >= 0; i--) {
         const p = pulses[i];
         p.t += p.speed;
@@ -69,7 +69,7 @@ function draw() {
         const py = a.y + (b.y - a.y) * p.t;
 
         const grad = ctx.createRadialGradient(px, py, 0, px, py, 20);
-        grad.addColorStop(0, 'rgba(0, 255, 179, 0.9)');   // halo
+        grad.addColorStop(0, 'rgba(0, 255, 179, 0.9)');  
         grad.addColorStop(0.4, 'rgba(0, 200, 150, 0.3)');
         grad.addColorStop(1, 'rgba(0, 100, 80, 0)');
         ctx.beginPath();
@@ -83,7 +83,7 @@ function draw() {
         ctx.fill();
     }
 
-    // Noeuds
+
     for (const n of nodes) {
         ctx.beginPath();
         ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);

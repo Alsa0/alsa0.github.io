@@ -1,6 +1,4 @@
-// ============================================
-// MAIN.JS — Logique du portfolio
-// ============================================
+
 
 document.addEventListener("DOMContentLoaded", () => {
   initNavbar();
@@ -14,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initTypingEffect();
 });
 
-// --- NAVBAR scroll effect ---
 function initNavbar() {
   const navbar = document.querySelector(".navbar");
   const links = document.querySelectorAll(".nav-links a");
@@ -39,7 +36,6 @@ function updateActiveLink(links) {
   });
 }
 
-// --- MOBILE MENU ---
 function initMobileMenu() {
   const toggle = document.querySelector(".nav-toggle");
   const menu = document.querySelector(".nav-links");
@@ -70,7 +66,6 @@ function initMobileMenu() {
   });
 }
 
-// --- RENDER PROJECTS ---
 function renderProjects(filter) {
   const grid = document.getElementById("projects-grid");
   if (!grid) return;
@@ -120,19 +115,16 @@ function renderProjects(filter) {
 
     grid.appendChild(card);
 
-    // Animate in
     requestAnimationFrame(() => {
       setTimeout(() => card.classList.add("visible"), 50 + index * 100);
     });
   });
 }
 
-// --- FILTER BUTTONS ---
 function initFilters() {
   const bar = document.getElementById("filter-bar");
   if (!bar) return;
 
-  // Render filter buttons
   bar.innerHTML = "";
   categories.forEach((cat) => {
     const btn = document.createElement("button");
@@ -148,7 +140,6 @@ function initFilters() {
   });
 }
 
-// --- SCROLL ANIMATIONS ---
 function initScrollAnimations() {
   const observer = new IntersectionObserver(
     (entries) => {
@@ -164,7 +155,6 @@ function initScrollAnimations() {
   document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 }
 
-// --- SCROLL TO TOP ---
 function initScrollTop() {
   const btn = document.getElementById("scroll-top");
   if (!btn) return;
@@ -178,9 +168,8 @@ function initScrollTop() {
   });
 }
 
-// --- CONTACT FORM (EmailJS) ---
 function initContactForm() {
-  // Initialiser EmailJS avec la Public Key
+
   emailjs.init("XJpOx8yQaapPlU2Yv");
 
   const form = document.getElementById("contact-form");
@@ -191,12 +180,10 @@ function initContactForm() {
     const btn = form.querySelector(".form-submit");
     const original = btn.textContent;
 
-    // Désactiver le bouton pendant l'envoi
     btn.textContent = "⏳ Envoi en cours...";
     btn.disabled = true;
     btn.style.opacity = "0.7";
 
-    // Préparer les données du template
     const templateParams = {
       from_name: form.querySelector("#name").value,
       from_email: form.querySelector("#email").value,
@@ -207,7 +194,6 @@ function initContactForm() {
       }),
     };
 
-    // Envoyer l'email via EmailJS
     emailjs.send("service_alsa", "template_alsa", templateParams)
       .then(() => {
         btn.textContent = "✓ Message envoyé !";
@@ -234,7 +220,6 @@ function initContactForm() {
   });
 }
 
-// --- PROJECT MODAL ---
 function initProjectModal() {
   const modal = document.createElement('div');
   modal.id = 'project-modal';
@@ -288,7 +273,6 @@ function closeModal() {
   }
 }
 
-// --- TYPING EFFECT ---
 function initTypingEffect() {
   const roles = [
     "Ingénieur Réseaux & Infrastructures",
