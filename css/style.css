@@ -816,6 +816,7 @@ button {
 
 .credentials-badge {
   margin-top: 32px;
+  margin-bottom: 40px;
   padding: 20px;
   background: var(--bg-glass);
   border: 1px solid var(--border-glass);
@@ -823,17 +824,35 @@ button {
   backdrop-filter: blur(10px);
 }
 
-.credentials-title {
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin-bottom: 12px;
-  color: var(--text-secondary);
-}
-
 .credentials-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.badge-link {
+  display: inline-block;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-smooth);
+}
+
+.badge-link:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.badge-img {
+  width: 130px;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+
+.badge-link:hover .badge-img {
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
 }
 
 .projects-grid {
