@@ -846,7 +846,7 @@ button {
 }
 
 .badge-img {
-  width: 130px;
+  width: 100px;
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-md);
   transition: var(--transition-smooth);
