@@ -848,7 +848,8 @@ button {
 .badge-img {
   width: 130px;
   border-radius: var(--radius-sm);
-  display: block;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-smooth);
 }
 
 .badge-link:hover .badge-img {
